@@ -1,0 +1,22 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "First webApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladimirFr89/webApp.git"
+  },
+  "author": "Vladimir Fedorin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladimirFr89/webApp/issues"
+  },
+  "homepage": "https://github.com/vladimirFr89/webApp#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
