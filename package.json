@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/vladimirFr89/webApp#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.6.0"
   }
 }
