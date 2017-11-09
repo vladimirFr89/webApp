@@ -22,7 +22,8 @@ gulp.task('views', function buildHTML() {
         .pipe(pug({
             pretty: '    '
         }))
-        .pipe(gulp.dest('app'));
+        .pipe(gulp.dest('app'))
+        .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('stylus', function () {
@@ -33,6 +34,6 @@ gulp.task('stylus', function () {
 });
 
 gulp.task('watch',['browser-sync', 'views','stylus'], function() {
-    gulp.watch('app/views/*.pug', ['views'])
+    gulp.watch('app/views/**/*.pug', ['views']);
     gulp.watch('app/stylus/**/*.styl', ['stylus']);
 });
