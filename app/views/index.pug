@@ -3,6 +3,29 @@ html
     head
         meta(charset="utf-8")
         title My First web app
+        link(rel='stylesheet' href='font-awesome-4.7.0/css/font-awesome.min.css')
         link(rel='stylesheet' href='css/main.css')
     body
-        p nothing yet
+        // Шапка сайта
+        header.header
+            // Фон для шапки сайта
+            div.bg.header__bg
+            // Контент для шапки
+            div.content.header__content
+                // Блок для Лого
+                div.logo
+                    a.logo__text.logo__text_middle-right-place(href="#") fdn
+                //Блок для меню
+                div.menu.content__menu
+                    ul.menu__items
+                        li.menu__item.menu__item_facebook-theme
+                            i(class="fa fa-facebook", aria-hidden="true")
+                        li.menu__item.menu__item_twitter-theme
+                            i(class="fa fa-twitter", aria-hidden="true")
+                        li.menu__item
+                            img(src="../img/forma-1.png", alt="корзина")
+                        li.menu__item
+                            img(src="../img/menu.png", alt="меню")
+                // Название страницы
+                div.caption.content__caption
+                    span.caption__text our services

@@ -3,9 +3,30 @@
     <head>
         <meta charset="utf-8">
         <title>My First web app</title>
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <p>nothing yet</p>
+        <!-- Шапка сайта-->
+        <header class="header">
+            <!-- Фон для шапки сайта-->
+            <div class="bg header__bg"></div>
+            <!-- Контент для шапки-->
+            <div class="content header__content">
+                <!-- Блок для Лого-->
+                <div class="logo"><a class="logo__text logo__text_middle-right-place" href="#">fdn</a></div>
+                <!--Блок для меню-->
+                <div class="menu content__menu">
+                    <ul class="menu__items">
+                        <li class="menu__item menu__item_facebook-theme"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        <li class="menu__item menu__item_twitter-theme"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        <li class="menu__item"><img src="../img/forma-1.png" alt="корзина"></li>
+                        <li class="menu__item"><img src="../img/menu.png" alt="меню"></li>
+                    </ul>
+                </div>
+                <!-- Название страницы-->
+                <div class="caption content__caption"><span class="caption__text">our services</span></div>
+            </div>
+        </header>
     </body>
 </html>

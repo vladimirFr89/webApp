@@ -1,7 +1,107 @@
 body
   margin 0
 
-p
-  color red
-  border 1px solid gold
+.header
+  min-height 348px
+  background-color #36383b
 
+/*Блок для фона шапки сайта */
+.bg
+  min-height 348px
+  width 1254px
+  background-color #d6d6d6
+
+/*Блок для контента*/
+.content
+  width 800px
+  min-height 50px
+  &_theme-grey
+    background-color grey
+    opacity 0.5
+
+/*примесь для фона шапки*/
+.header__bg
+  position absolute
+
+/*примесь для контента шапки сайта*/
+.header__content
+  width 1172px
+  margin-left auto
+  margin-right auto
+  position relative
+  top 29px
+
+
+/*примесь для меню в контенте шапки*/
+.content__menu
+  position absolute
+  top 25px
+  right 0
+
+/*примесь для названия страницы*/
+.content__caption
+  margin-top 84px
+
+/*====================Блок лого=================*/
+.logo
+  width 83px
+  height 83px
+  background url("../img/layer-logo.png") no-repeat
+  &__text
+    color white
+    font-family: Montserrat
+    font-size 28px
+    font-weight 700
+    text-transform uppercase
+    text-decoration none
+    &_middle-right-place
+      display block
+      position relative
+      top 26px
+      left 28px
+
+
+/*====================Блок меню==================*/
+.menu
+  &__items
+    list-style none
+    padding 0
+    margin 0
+    &::after
+      content ""
+      display table
+      clear both
+
+  &__item
+    float left
+    margin-right 40px
+    &_facebook-theme
+      color #ffffff
+      font-size 20px
+      font-weight 400
+      line-height 36.12px
+
+    &_twitter-theme
+      color #ffffff
+      font-size 22px
+      font-weight 400
+      line-height 36.12px
+
+    &:last-child
+      margin-right 0
+
+/*====================Блок с названием страницы=========*/
+.caption
+  width: 293px
+  height 71px
+  background-color #ffffff
+  &__text
+    display block
+    position relative
+    top 20px
+    left 28px
+    color #363636
+    font-family Montserrat
+    font-size 28px
+    font-weight 400
+    text-transform uppercase
