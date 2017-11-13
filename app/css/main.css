@@ -109,3 +109,27 @@ body {
   font-weight: 400;
   text-transform: uppercase;
 }
+/*Тело сайта*/
+.main {
+  background-color: #f00;
+  opacity: 0.3;
+  min-height: 300px;
+}
+/*Примесь для контента тела сайта*/
+.main__content {
+  width: 1172px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Футер сайта*/
+.footer {
+  background-color: #00f;
+  opacity: 0.3;
+  min-height: 100px;
+}
+/*Примесь для подвала сайта*/
+.footer__content {
+  width: 1172px;
+  margin-left: auto;
+  margin-right: auto;
+}
