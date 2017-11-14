@@ -166,17 +166,143 @@ body
   &__column-inner-right
     float right
 
+  //Размещение информационных блоков
+  &__double-unit
+    display inline-block
+    vertical-align top
+
+
+/*!!!!!!=============Информационный блок=======================!!!!!*/
+.unit
+  width 233px
+  height 233px
+  padding 30px 30px
+  //Блок в котором будет размещаться текст на белом фоне
+  &_theme-info
+    background-color #ffffff
+
+  //Блок для размещения фото
+  &_theme-foto
+    background-color #d6d6d6
+
+  //Блок для нахождения в aside голубой
+  &_theme-blue
+    background-color #2998d6
+
+  //Блок для нахождения в aside желтый
+  &_theme-yello
+    background-color #ffe12a
+
+  //Блок желтого цвета с иконкой pdf на фоне
+  &_theme-pdf-icon-yellow
+    background #ffe400 url("../img/icon-pdf.png") no-repeat 120px 102px
+
+  //Блок желтого цвета с иконкой шестеренок на фоне
+  &_theme-star-icon-yellow
+    background #ffe400 url("../img/icon-star.png") no-repeat 108px 101px
+
+
+  //Элемент заголовок
+  &__title
+    width 155px
+    margin-top 0
+    &_theme-head
+      color #363636
+      font-family Montserrat
+      font-size 18px
+      font-weight 700
+
+    &_theme-head-aside
+      color: #ffffff
+      font-family Montserrat
+      font-size 28px
+      font-weight 700
+      text-transform uppercase
+      letter-spacing 0.18px
+
+    &_theme-head-aside-small
+      color #ffffff
+      font-family Montserrat
+      font-size 18px
+      font-weight 400
+
+  //Элемент заметка
+  &__mark
+    &_theme-blue-white
+      color #8bcffb
+      font-family Montserrat
+      font-size 14px
+      font-weight 400
+
+  //Элемент статья
+  &__article
+    &_theme-text
+      color #989898
+      font-family Montserrat
+      font-size 14px
+      font-weight 400
+      line-height 22px
+
+  //Элемент горизонтальной линии
+  &__horizontal
+    width 40px
+    margin-left 0
+    border-width 3px
+    &_black-solid
+      border solid #363636
+    &_white-solid
+      border solid #ffffff
+
+  //Элемент номер
+  &__number
+    width 71px
+    height 71px
+    &_theme-yellow
+      background-color #ffe400
+      color #363636
+      font-family Montserrat
+      font-size 28px
+      font-weight 400
+      text-align center
+    &_middle
+      display: inline-block;
+
+  //Элемент подпись иконки
+  &__icon-caption
+    display block
+    position relative
+    top 160px
+    text-align center
+    &_uppercase-text-black
+      color #363636
+      font-family Montserrat
+      font-size 12px
+      font-weight 400
+      text-transform uppercase
+      letter-spacing 0.08px
 
 
 
 /*Футер сайта*/
 .footer
-  background-color blue
   opacity 0.3
   min-height 100px
+  //Элемент для контента футера
+  &__content
+    width 1172px
+    min-height 100px
+    //Фон для контента футера
+    &_theme-grey
+      background-color #d6d6d6
+  //Размещение контента в футере
+  &__inner
+    margin-left auto
+    margin-right auto
 
-/*Примесь для подвала сайта*/
-.footer__content
-  width 1172px
-  margin-left auto
-  margin-right auto
+  //Элемент для размещения содержимого типа копирайт, меню и т.д.
+  &__container
+    position relative
+    background-color green
+
+
+
