@@ -10,22 +10,27 @@
         <!-- Шапка сайта-->
         <header class="header">
             <!-- Фон для шапки сайта-->
-            <div class="bg header__bg"></div>
+            <div class="header__bg header__bg-inner header__bg_theme-gray"></div>
             <!-- Контент для шапки-->
-            <div class="content header__content">
-                <!-- Блок для Лого-->
-                <div class="logo"><a class="logo__text logo__text_middle-right-place" href="#">fdn</a></div>
-                <!--Блок для меню-->
-                <div class="menu content__menu">
-                    <ul class="menu__items">
-                        <li class="menu__item menu__item_facebook-theme"><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                        <li class="menu__item menu__item_twitter-theme"><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                        <li class="menu__item"><img src="../img/forma-1.png" alt="корзина"></li>
-                        <li class="menu__item"><img src="../img/menu.png" alt="меню"></li>
-                    </ul>
+            <div class="header__content header__content-inner">
+                <!--Фон в контенте шапки-->
+                <div class="header__content-bg header__content-bg-inner header__content-bg_theme-gray"></div>
+                <!--Контейнер в контенте шапки для содержимого типа лого, меню и т.д-->
+                <div class="header__container header__content-container-inner">
+                    <!-- Блок для Лого-->
+                    <div class="logo"><a class="logo__text logo__text_middle-right-place" href="#">fdn</a></div>
+                    <!--Блок для меню-->
+                    <div class="menu content__menu">
+                        <ul class="menu__items">
+                            <li class="menu__item menu__item_facebook-theme"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                            <li class="menu__item menu__item_twitter-theme"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                            <li class="menu__item"><img src="../img/forma-1.png" alt="корзина"></li>
+                            <li class="menu__item"><img src="../img/menu.png" alt="меню"></li>
+                        </ul>
+                    </div>
+                    <!-- Название страницы-->
+                    <div class="caption content__caption"><span class="caption__text">our services</span></div>
                 </div>
-                <!-- Название страницы-->
-                <div class="caption content__caption"><span class="caption__text">our services</span></div>
             </div>
         </header>
         <!--Тело сайта-->

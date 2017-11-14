@@ -1,15 +1,52 @@
 body {
   margin: 0;
 }
+/*Блок для размещения шапки сайта*/
 .header {
   min-height: 348px;
   background-color: #36383b;
 }
-/*Блок для фона шапки сайта */
-.bg {
+.header__bg {
   min-height: 348px;
-  width: 1254px;
+  width: 50%;
+}
+.header__bg_theme-gray {
   background-color: #d6d6d6;
+}
+.header__content {
+  width: 1172px;
+}
+.header__content-bg {
+  width: 879px;
+  min-height: 348px;
+}
+.header__content-bg_theme-red {
+  background-color: #f00;
+}
+.header__content-bg_theme-gray {
+  background-color: #d6d6d6;
+}
+.header__container_theme-green {
+  background-color: #008000;
+}
+/*примесь для фона шапки*/
+.header__bg-inner {
+  position: absolute;
+}
+/*примесь для контента шапки сайта*/
+.header__content-inner {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+/*примесь для фона контента шапки сайта*/
+.header__content-bg-inner {
+  position: absolute;
+}
+/*примесь для содержимого контента шапки*/
+.header__content-container-inner {
+  position: relative;
+  top: 29px;
 }
 /*Блок для контента*/
 .content {
@@ -19,18 +56,6 @@ body {
 .content_theme-grey {
   background-color: #808080;
   opacity: 0.5;
-}
-/*примесь для фона шапки*/
-.header__bg {
-  position: absolute;
-}
-/*примесь для контента шапки сайта*/
-.header__content {
-  width: 1172px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  top: 29px;
 }
 /*примесь для меню в контенте шапки*/
 .content__menu {

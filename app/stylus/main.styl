@@ -1,15 +1,53 @@
 body
   margin 0
-
+/*Блок для размещения шапки сайта*/
 .header
   min-height 348px
   background-color #36383b
+  // Элемент шапки для фона шапки
+  &__bg
+    min-height 348px
+    width 50%
+    //Цвет фона для элемента шапки
+    &_theme-gray
+      background-color #d6d6d6
 
-/*Блок для фона шапки сайта */
-.bg
-  min-height 348px
-  width 1254px
-  background-color #d6d6d6
+  //Элемент шапки для контента
+  &__content
+    width 1172px
+
+  //Элемент шапки для фона контента в шапке(фон под лого, меню, и т.д)
+  &__content-bg
+    width 879px
+    min-height 348px
+    &_theme-red
+      background-color #ff0000
+    &_theme-gray
+      background-color #d6d6d6
+
+  //Элемент шапки для содержимого(лого, меню, кнопки и т.д)
+  &__container
+    &_theme-green
+      background-color #008000
+
+/*примесь для фона шапки*/
+.header__bg-inner
+  position absolute
+
+/*примесь для контента шапки сайта*/
+.header__content-inner
+  margin-left auto
+  margin-right auto
+  position relative
+
+/*примесь для фона контента шапки сайта*/
+.header__content-bg-inner
+  position absolute
+
+/*примесь для содержимого контента шапки*/
+.header__content-container-inner
+  position relative
+  top 29px
 
 /*Блок для контента*/
 .content
@@ -18,18 +56,6 @@ body
   &_theme-grey
     background-color grey
     opacity 0.5
-
-/*примесь для фона шапки*/
-.header__bg
-  position absolute
-
-/*примесь для контента шапки сайта*/
-.header__content
-  width 1172px
-  margin-left auto
-  margin-right auto
-  position relative
-  top 29px
 
 
 /*примесь для меню в контенте шапки*/
