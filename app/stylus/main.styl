@@ -147,6 +147,24 @@ body
   &__content-inner
     margin-left auto
     margin-right auto
+    &::after
+      content ""
+      display table
+      clear both
+  //колонка контента для главного содержимого
+  &__column-main
+    width 879px
+    min-height 400px
+  //колонка контента для остального
+  &__column-aside
+    width 293px
+    min-height 400px
+  //размещение колонки слева в месте главного контента сайта
+  &__column-inner-left
+    margin-right 293px
+  //размещение колонки справа в месте главного контента сайта
+  &__column-inner-right
+    float right
 
 
 
