@@ -160,7 +160,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
 }
-/*Тело сайта*/
+/*====================Блок Тело сайта=========================*/
 .main {
   min-height: 500px;
 }
@@ -186,6 +186,9 @@ body {
 .main__column-main {
   width: 879px;
   min-height: 400px;
+}
+.main__column-main_theme-inline {
+  font-size: 0;
 }
 .main__column-aside {
   width: 293px;
