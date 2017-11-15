@@ -117,8 +117,31 @@ body {
   font-weight: 400;
   line-height: 36.12px;
 }
+.menu__item_icon-theme {
+  padding-top: 5px;
+}
 .menu__item:last-child {
   margin-right: 0;
+}
+.menu__item-layer {
+  position: relative;
+}
+.menu__icon-super {
+  position: absolute;
+  top: -10px;
+  right: -15px;
+}
+.menu__icon-super_theme-text {
+  color: #363636;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+}
+.menu__icon-super_theme-sq-yellow {
+  width: 21px;
+  height: 16px;
+  text-align: center;
+  background-color: #ffe400;
 }
 /*====================Блок с названием страницы=========*/
 .caption {
@@ -281,20 +304,49 @@ body {
 }
 /*Футер сайта*/
 .footer {
-  opacity: 0.3;
-  min-height: 100px;
+  min-height: 80px;
+}
+.footer_theme-white-grey {
+  background-color: #f5f5f5;
+}
+.footer_theme-text {
+  color: #9b9b9b;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+}
+.footer_theme-text-mark {
+  color: #2297d8;
+}
+.footer_theme-text-menu {
+  color: #a2a2a2;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
 }
 .footer__content {
   width: 1172px;
-  min-height: 100px;
+  min-height: 80px;
 }
 .footer__content_theme-grey {
-  background-color: #d6d6d6;
+  background-color: #f5f5f5;
 }
 .footer__inner {
   margin-left: auto;
   margin-right: auto;
 }
+.footer__container__container-inner {
+  position: relative;
+  top: 29px;
+}
+.footer__container__text-inner {
+  display: inline-block;
+}
 .footer__container__menu-inner {
   float: right;
+}
+.footer__container::after {
+  content: "";
+  display: table;
+  clear: both;
 }
