@@ -302,6 +302,44 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.08px;
 }
+.unit__inner-form-aside {
+  position: relative;
+  bottom: -40px;
+}
+/*===========================Блок форма==============================*/
+.form__input_theme-text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+}
+.form__input_theme-blue-text {
+  color: #59a9d6;
+}
+.form__input_theme-aside-input {
+  width: 100%;
+  padding: 13px 7px;
+  box-sizing: border-box;
+}
+.form__submit_theme-text {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.form__submit_theme-white-text {
+  color: #fff;
+}
+.form__submit_theme-aside-submit {
+  float: right;
+  margin-top: 30px;
+  border: none;
+  background-color: #2297d8;
+}
+.form::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /*Футер сайта*/
 .footer {
   min-height: 80px;

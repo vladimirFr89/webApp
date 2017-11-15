@@ -308,7 +308,51 @@ body
       text-transform uppercase
       letter-spacing 0.08px
 
+  //Размещение формы в unit aside
+  &__inner-form-aside
+    position relative
+    bottom -40px
 
+/*===========================Блок форма==============================*/
+.form
+  //элемент поле ввода
+  &__input
+
+    &_theme-text
+      font-family Montserrat
+      font-size 14px
+      font-weight 400
+
+    &_theme-blue-text
+      color #59a9d6
+
+    &_theme-aside-input
+      width 100%
+      padding 13px 7px
+      box-sizing border-box
+
+  //Элемент submit
+  &__submit
+
+    &_theme-text
+      font-family Montserrat
+      font-size 12px
+      font-weight 400
+      text-transform uppercase
+
+    &_theme-white-text
+      color #ffffff
+
+    &_theme-aside-submit
+      float right
+      margin-top 30px
+      border none
+      background-color #2297d8
+
+  &::after
+    content ""
+    display table
+    clear both
 
 /*Футер сайта*/
 .footer
