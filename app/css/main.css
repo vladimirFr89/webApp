@@ -75,7 +75,7 @@ body {
 }
 .logo__text {
   color: #fff;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
@@ -85,7 +85,7 @@ body {
   display: block;
   position: relative;
   top: 26px;
-  left: 28px;
+  left: 21px;
 }
 /*====================Блок меню==================*/
 .menu__items {
@@ -133,7 +133,7 @@ body {
 }
 .menu__icon-super_theme-text {
   color: #363636;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 12px;
   font-weight: 400;
 }
@@ -155,7 +155,7 @@ body {
   top: 20px;
   left: 28px;
   color: #363636;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 28px;
   font-weight: 400;
   text-transform: uppercase;
@@ -235,33 +235,34 @@ body {
 }
 .unit__title_theme-head {
   color: #363636;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
 .unit__title_theme-head-aside {
+  margin-bottom: 0;
   color: #fff;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.18px;
 }
 .unit__title_theme-head-aside-small {
   color: #fff;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
 .unit__mark_theme-blue-white {
   color: #8bcffb;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
 .unit__article_theme-text {
   color: #989898;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -284,7 +285,7 @@ body {
 .unit__number_theme-yellow {
   background-color: #ffe400;
   color: #363636;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 28px;
   font-weight: 400;
   text-align: center;
@@ -300,7 +301,7 @@ body {
 }
 .unit__icon-caption_uppercase-text-black {
   color: #363636;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
@@ -321,13 +322,13 @@ body {
 }
 .unit__inner-form-aside {
   position: relative;
-  bottom: -40px;
+  bottom: -52px;
 }
 /*===========================Блок форма==============================*/
 .form__input_theme-text {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .form__input_theme-blue-text {
   color: #59a9d6;
@@ -338,9 +339,9 @@ body {
   box-sizing: border-box;
 }
 .form__submit_theme-text {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .form__submit_theme-white-text {
@@ -366,7 +367,7 @@ body {
 }
 .footer_theme-text {
   color: #9b9b9b;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 12px;
   font-weight: 400;
 }
@@ -375,7 +376,7 @@ body {
 }
 .footer_theme-text-menu {
   color: #a2a2a2;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 12px;
   font-weight: 400;
 }
