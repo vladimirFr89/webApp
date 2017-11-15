@@ -198,6 +198,7 @@ body
 
   //Размещение информационных блоков
   &__double-unit
+    position relative
     display inline-block
     vertical-align top
 
@@ -310,6 +311,21 @@ body
       font-weight 400
       text-transform uppercase
       letter-spacing 0.08px
+
+  //Элемент стрелки
+  &__arrow
+    position absolute
+    border 12px solid transparent
+
+    &_down
+      left 130px
+      border-top 12px solid #ffffff
+
+    &_up
+      top 269px
+      left 130px
+      border-bottom 12px solid #ffffff
+
 
   //Размещение формы в unit aside
   &__inner-form-aside

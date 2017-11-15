@@ -201,6 +201,7 @@ body {
   float: right;
 }
 .main__double-unit {
+  position: relative;
   display: inline-block;
   vertical-align: top;
 }
@@ -304,6 +305,19 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.08px;
+}
+.unit__arrow {
+  position: absolute;
+  border: 12px solid transparent;
+}
+.unit__arrow_down {
+  left: 130px;
+  border-top: 12px solid #fff;
+}
+.unit__arrow_up {
+  top: 269px;
+  left: 130px;
+  border-bottom: 12px solid #fff;
 }
 .unit__inner-form-aside {
   position: relative;
