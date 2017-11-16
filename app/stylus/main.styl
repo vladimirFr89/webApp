@@ -1,7 +1,429 @@
 body
   margin 0
+/*Блок для размещения шапки сайта*/
+.header
+  min-height 348px
+  background-color #36383b
+  // Элемент шапки для фона шапки
+  &__bg
+    min-height 348px
+    width 50%
+    //Цвет фона для элемента шапки
+    &_theme-gray
+      background-color #d6d6d6
 
-p
-  color red
-  border 1px solid gold
+  //Элемент шапки для контента
+  &__content
+    width 1172px
+
+  //Элемент шапки для фона контента в шапке(фон под лого, меню, и т.д)
+  &__content-bg
+    width 879px
+    min-height 348px
+    &_theme-red
+      background-color #ff0000
+    &_theme-gray
+      background-color #d6d6d6
+
+  //Элемент шапки для содержимого(лого, меню, кнопки и т.д)
+  &__container
+    &_theme-green
+      background-color #008000
+
+/*примесь для фона шапки*/
+.header__bg-inner
+  position absolute
+
+/*примесь для контента шапки сайта*/
+.header__content-inner
+  margin-left auto
+  margin-right auto
+  position relative
+
+/*примесь для фона контента шапки сайта*/
+.header__content-bg-inner
+  position absolute
+
+/*примесь для содержимого контента шапки*/
+.header__content-container-inner
+  position relative
+  top 29px
+
+/*Блок для контента*/
+.content
+  width 800px
+  min-height 50px
+  &_theme-grey
+    background-color grey
+    opacity 0.5
+
+
+/*примесь для меню в контенте шапки*/
+.content__menu
+  position absolute
+  top 25px
+  right 0
+
+/*примесь для названия страницы*/
+.content__caption
+  margin-top 84px
+
+/*====================Блок лого=================*/
+.logo
+  width 83px
+  height 83px
+  background url("../img/layer-logo.png") no-repeat
+  &__text
+    color white
+    font-family Montserrat, sans-serif;
+    font-size 28px
+    font-weight 700
+    text-transform uppercase
+    text-decoration none
+    &_middle-right-place
+      display block
+      position relative
+      top 26px
+      left 21px
+
+
+/*====================Блок меню==================*/
+.menu
+  &__items
+    list-style none
+    padding 0
+    margin 0
+    &::after
+      content ""
+      display table
+      clear both
+
+  &__item
+    float left
+    margin-right 40px
+
+    &_text
+      text-decoration none
+
+    &_facebook-theme
+      color #ffffff
+      font-size 20px
+      font-weight 400
+      line-height 36.12px
+
+    &_twitter-theme
+      color #ffffff
+      font-size 22px
+      font-weight 400
+      line-height 36.12px
+
+    &_icon-theme
+      padding-top 5px
+
+    &:last-child
+      margin-right 0
+
+  &__item-layer
+    position relative
+
+  &__icon-super
+    position absolute
+    top -10px
+    right -15px
+
+    &_theme-text
+      color #363636
+      font-family Montserrat, sans-serif;
+      font-size 12px
+      font-weight 400
+
+    &_theme-sq-yellow
+      width 21px
+      height 16px
+      text-align center
+      background-color #ffe400
+
+/*====================Блок с названием страницы=========*/
+.caption
+  width: 293px
+  height 71px
+  background-color #ffffff
+  &__text
+    display block
+    position relative
+    top 20px
+    left 28px
+    color #363636
+    font-family Montserrat, sans-serif;
+    font-size 28px
+    font-weight 400
+    text-transform uppercase
+
+/*====================Блок Тело сайта=========================*/
+.main
+  min-height 500px
+  &_theme-white-gr
+    background-color #f5f5f5
+  //Элемент для размещения контента
+  &__content
+    width 1172px
+    min-height 450px
+    &_theme-grey
+      background-color #d6d6d6
+  // Нахождение контента внутри
+  &__content-inner
+    margin-left auto
+    margin-right auto
+    &::after
+      content ""
+      display table
+      clear both
+  //колонка контента для главного содержимого
+  &__column-main
+    width 879px
+    min-height 400px
+    //для размещения инлайн-блоков без пропусков
+    &_theme-inline
+      font-size 0
+  //колонка контента для остального
+  &__column-aside
+    width 293px
+    min-height 400px
+  //размещение колонки слева в месте главного контента сайта
+  &__column-inner-left
+    margin-right 293px
+  //размещение колонки справа в месте главного контента сайта
+  &__column-inner-right
+    float right
+
+  //Размещение информационных блоков
+  &__double-unit
+    position relative
+    display inline-block
+    vertical-align top
+
+
+/*!!!!!!=============Информационный блок=======================!!!!!*/
+.unit
+  width 233px
+  height 233px
+  padding 30px 30px
+  //Блок в котором будет размещаться текст на белом фоне
+  &_theme-info
+    background-color #ffffff
+
+  //Блок для размещения фото
+  &_theme-foto
+    background-color #d6d6d6
+
+  //Блок для нахождения в aside голубой
+  &_theme-blue
+    background-color #2998d6
+
+  //Блок для нахождения в aside желтый
+  &_theme-yello
+    background-color #ffe12a
+
+  //Блок желтого цвета с иконкой pdf на фоне
+  &_theme-pdf-icon-yellow
+    background #ffe400 url("../img/icon-pdf.png") no-repeat 120px 102px
+
+  //Блок желтого цвета с иконкой шестеренок на фоне
+  &_theme-star-icon-yellow
+    background #ffe400 url("../img/icon-star.png") no-repeat 108px 101px
+
+
+  //Элемент заголовок
+  &__title
+    width 155px
+    margin-top 0
+    &_theme-head
+      color #363636
+      font-family Montserrat, sans-serif;
+      font-size 18px
+      font-weight 700
+
+    &_theme-head-aside
+      margin-bottom 0
+
+      color: #ffffff
+      font-family Montserrat, sans-serif;
+      font-size 28px
+      font-weight 900
+      text-transform uppercase
+      letter-spacing 0.18px
+
+    &_theme-head-aside-small
+      color #ffffff
+      font-family Montserrat, sans-serif;
+      font-size 18px
+      font-weight 400
+
+  //Элемент заметка
+  &__mark
+    &_theme-blue-white
+      color #8bcffb
+      font-family Montserrat, sans-serif;
+      font-size 14px
+      font-weight 400
+
+  //Элемент статья
+  &__article
+    &_theme-text
+      color #989898
+      font-family Montserrat, sans-serif;
+      font-size 14px
+      font-weight 400
+      line-height 22px
+
+  //Элемент горизонтальной линии
+  &__horizontal
+    width 40px
+    margin-left 0
+    border-width 3px
+    &_black-solid
+      border solid #363636
+    &_white-solid
+      border solid #ffffff
+
+  //Элемент номер
+  &__number
+    width 71px
+    height 71px
+    &_theme-yellow
+      background-color #ffe400
+      color #363636
+      font-family Montserrat, sans-serif;
+      font-size 28px
+      font-weight 400
+      text-align center
+    &_middle
+      display: inline-block;
+
+  //Элемент подпись иконки
+  &__icon-caption
+    display block
+    position relative
+    top 160px
+    text-align center
+    &_uppercase-text-black
+      color #363636
+      font-family Montserrat, sans-serif;
+      font-size 12px
+      font-weight 400
+      text-transform uppercase
+      letter-spacing 0.08px
+
+  //Элемент стрелки
+  &__arrow
+    position absolute
+    border 12px solid transparent
+
+    &_down
+      left 130px
+      border-top 12px solid #ffffff
+
+    &_up
+      top 269px
+      left 130px
+      border-bottom 12px solid #ffffff
+
+
+  //Размещение формы в unit aside
+  &__inner-form-aside
+    position relative
+    bottom -52px
+
+/*===========================Блок форма==============================*/
+.form
+  //элемент поле ввода
+  &__input
+
+    &_theme-text
+      font-family Montserrat, sans-serif;
+      font-size 14px
+      font-weight 600
+
+    &_theme-blue-text
+      color #59a9d6
+
+    &_theme-aside-input
+      width 100%
+      padding 13px 7px
+      box-sizing border-box
+
+  //Элемент submit
+  &__submit
+
+    &_theme-text
+      font-family Montserrat, sans-serif;
+      font-size 12px
+      font-weight 600
+      text-transform uppercase
+
+    &_theme-white-text
+      color #ffffff
+
+    &_theme-aside-submit
+      float right
+      margin-top 30px
+      border none
+      background-color #2297d8
+
+  &::after
+    content ""
+    display table
+    clear both
+
+/*Футер сайта*/
+.footer
+  min-height 80px
+
+  &_theme-white-grey
+    background-color #f5f5f5
+
+  &_theme-text
+    color #9b9b9b
+    font-family Montserrat, sans-serif;
+    font-size 12px
+    font-weight 400
+
+  &_theme-text-mark
+    color: #2297d8
+
+  &_theme-text-menu
+    color #a2a2a2
+    font-family Montserrat, sans-serif;
+    font-size 12px
+    font-weight 400
+  //Элемент для контента футера
+  &__content
+    width 1172px
+    min-height 80px
+    //Фон для контента футера
+    &_theme-grey
+      background-color #f5f5f5
+  //Размещение контента в футере
+  &__inner
+    margin-left auto
+    margin-right auto
+
+  //Элемент для размещения содержимого типа копирайт, меню и т.д.
+  &__container
+    &__container-inner
+      position relative
+      top 29px
+
+    &__text-inner
+      display inline-block
+
+    &__menu-inner
+      float right
+
+    &::after
+      content ""
+      display table
+      clear both
+
+
 
