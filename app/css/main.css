@@ -243,6 +243,26 @@ body {
 .unit__horizontal--black-solid {
   border: solid #363636;
 }
+.unit__info--med-text {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Montserrat, sans-serif;
+}
+.unit__info--big-text {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 3.94px;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+}
+.unit__info--black-text {
+  color: #363636;
+}
+.unit__info-wrap {
+  display: block;
+  margin: 40px 0;
+  text-align: center;
+}
 .unit__article {
   font-size: 14px;
 }
@@ -251,6 +271,10 @@ body {
   line-height: 22px;
   font-family: Montserrat, sans-serif;
   color: #363636;
+}
+.unit__button-center {
+  display: block;
+  margin: 16px auto;
 }
 .unit__button-buttom-left {
   position: relative;
@@ -485,4 +509,18 @@ body {
 }
 .button--black-bg {
   background-color: #363636;
+}
+.button--white-bg {
+  background-color: #fff;
+}
+.button--theme-arrow {
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+.button--arrow-next {
+  background: url("../img/arr-next.png") no-repeat center;
+}
+.button--arrow-prev {
+  background: url("../img/arr-prev.png") no-repeat center;
 }
