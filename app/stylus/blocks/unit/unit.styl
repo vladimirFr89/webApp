@@ -1,0 +1,54 @@
+.unit
+  width 233px
+  height 233px
+  padding 30px 30px
+
+  //Блок вытянутый по горизонтали в два раза
+  &--horizontal-double-unit
+    width 526px
+
+  //Блок в котором будет размещаться текст на белом фоне
+  &--theme-info
+    background-color #ffffff
+
+  &--theme-yellow
+    background-color #ffe400
+
+  //Элемент заголовок
+  &__title
+    margin-top 0
+    margin-bottom .5em
+    font-size 14px
+
+    &--big-bold
+      font-size 27px
+      font-weight 700
+      font-family Montserrat, sans-serif;
+      text-transform uppercase
+
+    &--theme-unit-black-title
+      width 294px
+      color #363636
+
+  //Элемент горизонтальной линии
+  &__horizontal
+    width 34px
+    margin-left 0
+    border-width 2px
+
+    &--black-solid
+      border solid #363636
+
+  //Элемент article
+  &__article
+    font-size 14px
+    &--theme-unit-black-text
+      font-weight 600
+      line-height 22px
+      font-family Montserrat, sans-serif;
+      color #363636
+
+  //Элемент кнопка в левом нижнем углу
+  &__button-buttom-left
+    position relative
+    top 21px
