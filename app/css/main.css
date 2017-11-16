@@ -220,6 +220,9 @@ body {
 .unit--theme-yellow {
   background-color: #ffe400;
 }
+.unit--theme-blue {
+  background-color: #2297d8;
+}
 .unit__title {
   margin-top: 0;
   margin-bottom: 0.5em;
@@ -255,12 +258,26 @@ body {
   font-family: Montserrat, sans-serif;
   text-transform: uppercase;
 }
+.unit__info--small-text {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+}
 .unit__info--black-text {
   color: #363636;
+}
+.unit__info--white-text {
+  color: #fff;
 }
 .unit__info-wrap {
   display: block;
   margin: 40px 0;
+  text-align: center;
+}
+.unit__company-video-wrap {
+  width: 120px;
+  margin: 70px auto;
   text-align: center;
 }
 .unit__article {
@@ -271,6 +288,12 @@ body {
   line-height: 22px;
   font-family: Montserrat, sans-serif;
   color: #363636;
+}
+.unit__icon-caption {
+  display: block;
+  position: relative;
+  top: 160px;
+  text-align: center;
 }
 .unit__button-center {
   display: block;
@@ -510,6 +533,9 @@ body {
 .button--black-bg {
   background-color: #363636;
 }
+.button--blue-bg {
+  background-color: #2297d8;
+}
 .button--white-bg {
   background-color: #fff;
 }
@@ -523,4 +549,24 @@ body {
 }
 .button--arrow-prev {
   background: url("../img/arr-prev.png") no-repeat center;
+}
+/*===============================Блок иконка============================*/
+.icon {
+  padding: 0;
+  border: none;
+}
+.icon--blue-bg {
+  background-color: #2297d8;
+}
+.icon--theme-circle {
+  width: 71px;
+  height: 71px;
+  margin-bottom: 14px;
+  background: url("../img/play-circle.png") no-repeat center;
+}
+.icon--theme-play-arrow {
+  width: 22px;
+  height: 28px;
+  margin-left: 28px;
+  background: url("../img/play-arrow.png") no-repeat center;
 }
