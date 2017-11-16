@@ -205,6 +205,12 @@ body {
   display: inline-block;
   vertical-align: top;
 }
+.main__double-unit-horiz {
+  position: relative;
+  display: inline-block;
+  width: 586px;
+  font-size: 0;
+}
 /*!!!!!=============Информационный блок=======================!!!!!*/
 .unit {
   width: 233px;
@@ -214,8 +220,14 @@ body {
 .unit--horizontal-double-unit {
   width: 526px;
 }
+.unit--inline {
+  display: inline-block;
+}
 .unit--theme-info {
   background-color: #fff;
+}
+.unit--theme-foto {
+  background-color: #d6d6d6;
 }
 .unit--theme-yellow {
   background-color: #ffe400;
@@ -228,6 +240,12 @@ body {
   margin-bottom: 0.5em;
   font-size: 14px;
 }
+.unit__title--bold {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #363636;
+}
 .unit__title--big-bold {
   font-size: 27px;
   font-weight: 700;
@@ -236,6 +254,10 @@ body {
 }
 .unit__title--theme-unit-black-title {
   width: 294px;
+  color: #363636;
+}
+.unit__title--text-width {
+  width: 155px;
   color: #363636;
 }
 .unit__horizontal {
@@ -288,6 +310,9 @@ body {
   line-height: 22px;
   font-family: Montserrat, sans-serif;
   color: #363636;
+}
+.unit__article--gray-text {
+  color: #a0a0a0;
 }
 .unit__icon-caption {
   display: block;

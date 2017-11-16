@@ -7,9 +7,17 @@
   &--horizontal-double-unit
     width 526px
 
+  //Размещать блоки в ряды
+  &--inline
+    display inline-block
+
   //Блок в котором будет размещаться текст на белом фоне
   &--theme-info
     background-color #ffffff
+
+  //Блок для размещения фото
+  &--theme-foto
+    background-color #d6d6d6
 
   &--theme-yellow
     background-color #ffe400
@@ -23,6 +31,12 @@
     margin-bottom .5em
     font-size 14px
 
+    &--bold
+      font-family Montserrat, sans-serif;
+      font-size 18px
+      font-weight 700
+      color #363636
+
     &--big-bold
       font-size 27px
       font-weight 700
@@ -31,6 +45,10 @@
 
     &--theme-unit-black-title
       width 294px
+      color #363636
+
+    &--text-width
+      width 155px
       color #363636
 
   //Элемент горизонтальной линии
@@ -90,6 +108,9 @@
       line-height 22px
       font-family Montserrat, sans-serif;
       color #363636
+
+    &--gray-text
+      color #a0a0a0
 
   //Элемент подпись иконки
   &__icon-caption
