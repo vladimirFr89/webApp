@@ -16,8 +16,14 @@ body {
 .header__bg_theme-gray {
   background-color: #d6d6d6;
 }
+.header__bg--theme-dark-grey {
+  background-color: #36383b;
+}
 .header__bg--height-home-page {
   min-height: 826px;
+}
+.header__bg--part-right {
+  margin-left: 50%;
 }
 .header__content {
   width: 1172px;
