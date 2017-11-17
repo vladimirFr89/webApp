@@ -704,6 +704,9 @@ body {
 .button--arrow-prev {
   background: url("../img/arr-prev.png") no-repeat center;
 }
+.button--arrow-prev-hover {
+  background: url("../img/arr-prev-hover.png") no-repeat center;
+}
 /*===============================Блок иконка============================*/
 .icon {
   padding: 0;
