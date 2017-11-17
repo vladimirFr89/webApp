@@ -290,6 +290,9 @@ body {
 .unit__horizontal--inline:last-child {
   margin-right: 0;
 }
+.unit__info--block {
+  display: block;
+}
 .unit__info--med-text {
   font-size: 20px;
   font-weight: 600;
@@ -313,11 +316,28 @@ body {
   font-weight: 900;
   font-family: Montserrat, sans-serif;
 }
+.unit__info--norm-text {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+}
 .unit__info--black-text {
   color: #363636;
 }
 .unit__info--white-text {
   color: #fff;
+}
+.unit__info--grey-text {
+  color: #a0a0a0;
+}
+.unit__info--dark-grey-text {
+  color: #707070;
+}
+.unit__info--letter-spacing035 {
+  letter-spacing: 0.35px;
+}
+.unit__info--letter-spacing047 {
+  letter-spacing: 0.47px;
 }
 .unit__info-wrap {
   display: block;
@@ -708,4 +728,21 @@ __submit_theme-aside-submit {
   height: 14px;
   margin-top: 10px;
   background: url("../img/rate5.png") no-repeat center;
+}
+.icon--blue-square {
+  position: relative;
+  height: 83px;
+  width: 83px;
+  margin-bottom: 35px;
+  text-align: center;
+  background: url("../img/rectangle-blue.png") no-repeat center;
+}
+.icon--ligthinig-blue {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  height: 38px;
+  width: 21px;
+  vertical-align: middle;
+  background: url("../img/lightning-blue.png") no-repeat center;
 }
