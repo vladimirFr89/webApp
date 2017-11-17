@@ -238,6 +238,9 @@ body {
 .unit--white {
   background-color: #fff;
 }
+.unit--transparent {
+  background-color: transparent;
+}
 .unit__title {
   margin-top: 0;
   margin-bottom: 0.7em;
@@ -312,6 +315,9 @@ body {
 .unit__contact-us-wrap {
   margin-top: 70px;
   text-align: center;
+}
+.unit__form-search-wrap {
+  margin-top: 100px;
 }
 .unit__article {
   font-size: 14px;
@@ -470,35 +476,55 @@ body {
     bottom -52px
 
 /*===========================Блок форма==============================*/
-.form__input_theme-text {
-  font-family: Montserrat, sans-serif;
-  font-size: 14px;
-  font-weight: 600;
+.form {
+  position: relative;
 }
-.form__input_theme-blue-text {
-  color: #59a9d6;
-}
-.form__input_theme-aside-input {
+.form__input--theme-unit-search {
   width: 100%;
-  padding: 13px 7px;
-  box-sizing: border-box;
+  padding-top: 4px;
+  padding-bottom: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  background-color: transparent;
 }
-.form__submit_theme-text {
+.form__input--border-bottom-only {
+  border: none;
+  border-bottom: 1px solid;
+}
+.form__input--border-white {
+  border-color: #fff;
+}
+.form__button--theme-search-button {
+  border: none;
+  background-color: transparent;
+}
+.form__button--right-button {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+}
+.form__button-icon {
+  font-size: 20px;
+  color: #fff;
+}
+__submit_theme-text {
   font-family: Montserrat, sans-serif;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
 }
-.form__submit_theme-white-text {
+__submit_theme-white-text {
   color: #fff;
 }
-.form__submit_theme-aside-submit {
+__submit_theme-aside-submit {
   float: right;
   margin-top: 30px;
   border: none;
   background-color: #2297d8;
 }
-.form::after {
+::after {
   content: "";
   display: table;
   clear: both;
