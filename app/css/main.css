@@ -196,6 +196,9 @@ body {
 .main__content_theme-grey {
   background-color: #d6d6d6;
 }
+.main__content--theme-transparent {
+  background-color: transparent;
+}
 .main__content-flex-wrap {
   display: flex;
   flex-wrap: wrap;
