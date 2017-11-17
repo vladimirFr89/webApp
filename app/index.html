@@ -9,35 +9,7 @@
     </head>
     <body>
         <!-- Шапка сайта-->
-        <header class="header">
-            <!-- Фон для шапки сайта-->
-            <div class="header__bg header__bg-inner header__bg_theme-gray"></div>
-            <!-- Контент для шапки-->
-            <div class="header__content header__content-inner">
-                <!--Фон в контенте шапки-->
-                <div class="header__content-bg header__content-bg-inner header__content-bg_theme-gray"></div>
-                <!--Контейнер в контенте шапки для содержимого типа лого, меню и т.д-->
-                <div class="header__container header__content-container-inner">
-                    <!-- Блок для Лого-->
-                    <div class="logo"><a class="logo__text logo__text_middle-right-place" href="#">fdn</a></div>
-                    <!--Блок для меню-->
-                    <div class="menu content__menu">
-                        <ul class="menu__items">
-                            <li class="menu__item menu__item_facebook-theme"><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                            <li class="menu__item menu__item_twitter-theme"><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                            <li class="menu__item menu__item_icon-theme">
-                                <div class="menu__item-layer"><img src="../img/forma-1.png" alt="корзина">
-                                    <div class="menu__icon-super menu__icon-super_theme-sq-yellow"><span class="menu__icon-super_theme-text">99</span></div>
-                                </div>
-                            </li>
-                            <li class="menu__item menu__item_icon-theme"><img src="../img/menu.png" alt="меню"></li>
-                        </ul>
-                    </div>
-                    <!-- Название страницы-->
-                    <div class="caption content__caption"><span class="caption__text">our services</span></div>
-                </div>
-            </div>
-        </header>
+        <!--include header/header.pug-->
         <!--Тело сайта-->
         <div class="main main_theme-white-gr">
             <!-- Контент для тела сайта-->
@@ -71,6 +43,23 @@
                     <hr class="unit__horizontal unit__horizontal--black-solid">
                     <p class="unit__article unit__article--theme-unit-black-text unit__article--gray-text">This allows the Design and Engineering team to originate drawings, specifications, structural calculations, details and scopes of work that deliver exactly what the client had intended to achieve.</p>
                 </div>
+                <div class="unit unit--white">
+                    <h2 class="unit__title unit__title--bold unit__title--text-width">Project design and engineering</h2>
+                    <hr class="unit__horizontal unit__horizontal--black-solid">
+                    <p class="unit__article unit__article--theme-unit-black-text unit__article--gray-text">Through Stage-Gate, Design and Engineering methodology, DMCS ensure client-partners realize clearly defined project objective to achieve intended results.</p>
+                </div>
+                <div class="unit unit--theme-foto"></div>
+                <div class="unit unit--white">
+                    <h2 class="unit__title unit__title--bold unit__title--text-width">Capital improvements</h2>
+                    <hr class="unit__horizontal unit__horizontal--black-solid">
+                    <p class="unit__article unit__article--theme-unit-black-text unit__article--gray-text">This results in scope creep and slippage of the schedule that ultimately result in additional costs to the owner.</p>
+                </div>
+                <div class="unit unit--theme-yellow">
+                    <div class="unit__download-price-wrap">
+                        <div class="icon icon--theme-pdf"></div><span class="unit__info unit__info--small-text unit__info--black-text">Download price</span>
+                    </div>
+                </div>
+                <div class="unit unit--theme-blue"></div>
             </div>
         </div>
         <!--Футтер-->

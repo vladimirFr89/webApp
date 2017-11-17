@@ -215,7 +215,7 @@ body {
 .unit {
   width: 233px;
   height: 233px;
-  padding: 30px 30px;
+  padding: 30px;
 }
 .unit--horizontal-double-unit {
   width: 526px;
@@ -235,9 +235,12 @@ body {
 .unit--theme-blue {
   background-color: #2297d8;
 }
+.unit--white {
+  background-color: #fff;
+}
 .unit__title {
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.7em;
   font-size: 14px;
 }
 .unit__title--bold {
@@ -300,6 +303,10 @@ body {
 .unit__company-video-wrap {
   width: 120px;
   margin: 70px auto;
+  text-align: center;
+}
+.unit__download-price-wrap {
+  margin-top: 70px;
   text-align: center;
 }
 .unit__article {
@@ -594,4 +601,9 @@ body {
   height: 28px;
   margin-left: 28px;
   background: url("../img/play-arrow.png") no-repeat center;
+}
+.icon--theme-pdf {
+  height: 71px;
+  margin-bottom: 16px;
+  background: url("../img/icon-pdf.png") no-repeat center;
 }
