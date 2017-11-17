@@ -220,6 +220,9 @@ body {
 .unit--horizontal-double-unit {
   width: 526px;
 }
+.unit--vertical-double-unit {
+  height: 526px;
+}
 .unit--inline {
   display: inline-block;
 }
@@ -260,6 +263,9 @@ body {
   font-weight: 700;
   font-family: Montserrat, sans-serif;
   text-transform: uppercase;
+}
+.unit__title--uppercase-disabled {
+  text-transform: none;
 }
 .unit__title--theme-unit-black-title {
   width: 294px;
@@ -684,6 +690,9 @@ body {
 .button--text-white {
   color: #fff;
 }
+.button--text-black {
+  color: #363636;
+}
 .button--black-bg {
   background-color: #363636;
 }
@@ -692,6 +701,9 @@ body {
 }
 .button--white-bg {
   background-color: #fff;
+}
+.button--yellow-bg {
+  background-color: #ffe400;
 }
 .button--theme-arrow {
   width: 30px;
