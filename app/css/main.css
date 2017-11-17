@@ -339,6 +339,9 @@ body {
 .unit__article--gray-text {
   color: #a0a0a0;
 }
+.unit__article--text-width419 {
+  width: 419px;
+}
 .unit__article--centered-text {
   text-align: center;
 }
@@ -358,6 +361,9 @@ body {
 .unit__button-buttom-left {
   position: relative;
   top: 21px;
+}
+.unit__button-left {
+  margin-top: 10px;
 }
 /*.unit
   width 233px
@@ -596,8 +602,7 @@ __submit_theme-aside-submit {
   font-size: 12px;
 }
 .button--theme-unit-btn {
-  width: 123px;
-  height: 46px;
+  padding: 15px 23px 15px 24px;
   font-weight: 600;
   font-family: Montserrat, sans-serif;
   text-transform: uppercase;
