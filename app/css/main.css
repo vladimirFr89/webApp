@@ -383,6 +383,10 @@ body {
 .unit__horiz-inline-wrap {
   font-size: 0;
 }
+.unit__inner-form-aside {
+  position: relative;
+  bottom: -52px;
+}
 .unit__article {
   font-size: 14px;
 }
@@ -575,6 +579,16 @@ body {
 .form__input--border-white {
   border-color: #fff;
 }
+.form__input--theme-unit-search-white {
+  width: 100%;
+  padding: 13px 7px;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #59a9d6;
+  background-color: #fff;
+}
 .form__button--theme-search-button {
   border: none;
   background-color: transparent;
@@ -588,22 +602,22 @@ body {
   font-size: 20px;
   color: #fff;
 }
-__submit_theme-text {
+.form__submit--small-text {
   font-family: Montserrat, sans-serif;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
 }
-__submit_theme-white-text {
+.form__submit--white-text {
   color: #fff;
 }
-__submit_theme-aside-submit {
+.form__submit--theme-link-submit {
   float: right;
   margin-top: 30px;
   border: none;
   background-color: #2297d8;
 }
-::after {
+.form::after {
   content: "";
   display: table;
   clear: both;
