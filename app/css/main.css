@@ -164,7 +164,7 @@ body {
 .main {
   min-height: 500px;
 }
-.main_theme-white-gr {
+.main--theme-white-gr {
   background-color: #f5f5f5;
 }
 .main__content {
@@ -182,34 +182,6 @@ body {
   content: "";
   display: table;
   clear: both;
-}
-.main__column-main {
-  width: 879px;
-  min-height: 400px;
-}
-.main__column-main_theme-inline {
-  font-size: 0;
-}
-.main__column-aside {
-  width: 293px;
-  min-height: 400px;
-}
-.main__column-inner-left {
-  margin-right: 293px;
-}
-.main__column-inner-right {
-  float: right;
-}
-.main__double-unit {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-}
-.main__double-unit-horiz {
-  position: relative;
-  display: inline-block;
-  width: 586px;
-  font-size: 0;
 }
 /*!!!!!=============Информационный блок=======================!!!!!*/
 .unit {

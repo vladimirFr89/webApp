@@ -160,53 +160,54 @@ body
     text-transform uppercase
 
 /*====================Блок Тело сайта=========================*/
-.main
-  min-height 500px
-  &_theme-white-gr
-    background-color #f5f5f5
-  //Элемент для размещения контента
-  &__content
-    width 1172px
-    min-height 450px
-    &_theme-grey
-      background-color #d6d6d6
-  // Нахождение контента внутри
-  &__content-inner
-    margin-left auto
-    margin-right auto
-    &::after
-      content ""
-      display table
-      clear both
-  //колонка контента для главного содержимого
-  &__column-main
-    width 879px
-    min-height 400px
-    //для размещения инлайн-блоков без пропусков
-    &_theme-inline
-      font-size 0
-  //колонка контента для остального
-  &__column-aside
-    width 293px
-    min-height 400px
-  //размещение колонки слева в месте главного контента сайта
-  &__column-inner-left
-    margin-right 293px
-  //размещение колонки справа в месте главного контента сайта
-  &__column-inner-right
-    float right
-
-  //Размещение информационных блоков
-  &__double-unit
-    position relative
-    display inline-block
-    vertical-align top
-
-  &__double-unit-horiz
-    position relative
-    display inline-block
-    width 586px
-    font-size 0
+@import "blocks/main/main.styl"
+//.main
+//  min-height 500px
+//  &_theme-white-gr
+//    background-color #f5f5f5
+//  //Элемент для размещения контента
+//  &__content
+//    width 1172px
+//    min-height 450px
+//    &_theme-grey
+//      background-color #d6d6d6
+//  // Нахождение контента внутри
+//  &__content-inner
+//    margin-left auto
+//    margin-right auto
+//    &::after
+//      content ""
+//      display table
+//      clear both
+//  //колонка контента для главного содержимого
+//  &__column-main
+//    width 879px
+//    min-height 400px
+//    //для размещения инлайн-блоков без пропусков
+//    &_theme-inline
+//      font-size 0
+//  //колонка контента для остального
+//  &__column-aside
+//    width 293px
+//    min-height 400px
+//  //размещение колонки слева в месте главного контента сайта
+//  &__column-inner-left
+//    margin-right 293px
+//  //размещение колонки справа в месте главного контента сайта
+//  &__column-inner-right
+//    float right
+//
+//  //Размещение информационных блоков
+//  &__double-unit
+//    position relative
+//    display inline-block
+//    vertical-align top
+//
+//  &__double-unit-horiz
+//    position relative
+//    display inline-block
+//    width 586px
+//    font-size 0
 
 /*!!!!!!=============Информационный блок=======================!!!!!*/
 @import "blocks/unit/unit.styl"
