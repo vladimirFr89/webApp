@@ -4,6 +4,10 @@ body
 .header
   min-height 348px
   background-color #36383b
+
+  &--theme-home-page
+    min-height 240px
+
   // Элемент шапки для фона шапки
   &__bg
     min-height 348px
@@ -11,6 +15,9 @@ body
     //Цвет фона для элемента шапки
     &_theme-gray
       background-color #d6d6d6
+
+    &--height-home-page
+      min-height 826px
 
   //Элемент шапки для контента
   &__content
@@ -24,6 +31,9 @@ body
       background-color #ff0000
     &_theme-gray
       background-color #d6d6d6
+
+    &--height-home-page
+      min-height 826px
 
   //Элемент шапки для содержимого(лого, меню, кнопки и т.д)
   &__container
@@ -69,22 +79,23 @@ body
   margin-top 84px
 
 /*====================Блок лого=================*/
-.logo
-  width 83px
-  height 83px
-  background url("../img/layer-logo.png") no-repeat
-  &__text
-    color white
-    font-family Montserrat, sans-serif;
-    font-size 28px
-    font-weight 700
-    text-transform uppercase
-    text-decoration none
-    &_middle-right-place
-      display block
-      position relative
-      top 26px
-      left 21px
+@import "blocks/logo/logo.styl"
+//.logo
+//  width 83px
+//  height 83px
+//  background url("../img/layer-logo.png") no-repeat
+//  &__text
+//    color white
+//    font-family Montserrat, sans-serif;
+//    font-size 28px
+//    font-weight 700
+//    text-transform uppercase
+//    text-decoration none
+//    &_middle-right-place
+//      display block
+//      position relative
+//      top 26px
+//      left 21px
 
 
 /*====================Блок меню==================*/

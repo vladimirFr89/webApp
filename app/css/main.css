@@ -6,12 +6,18 @@ body {
   min-height: 348px;
   background-color: #36383b;
 }
+.header--theme-home-page {
+  min-height: 240px;
+}
 .header__bg {
   min-height: 348px;
   width: 50%;
 }
 .header__bg_theme-gray {
   background-color: #d6d6d6;
+}
+.header__bg--height-home-page {
+  min-height: 826px;
 }
 .header__content {
   width: 1172px;
@@ -25,6 +31,9 @@ body {
 }
 .header__content-bg_theme-gray {
   background-color: #d6d6d6;
+}
+.header__content-bg--height-home-page {
+  min-height: 826px;
 }
 .header__container_theme-green {
   background-color: #008000;
@@ -71,7 +80,10 @@ body {
 .logo {
   width: 83px;
   height: 83px;
-  background: url("../img/layer-logo.png") no-repeat;
+  background: url("../img/layer-logo.png") no-repeat center;
+}
+.logo--theme-home-page {
+  background: url("../img/layer-logo-black.png") no-repeat center;
 }
 .logo__text {
   color: #fff;
@@ -81,7 +93,10 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
-.logo__text_middle-right-place {
+.logo__text--text-black {
+  color: #363636;
+}
+.logo__text-inner {
   display: block;
   position: relative;
   top: 26px;
@@ -168,6 +183,7 @@ body {
   background-color: #f5f5f5;
 }
 .main__content {
+  position: relative;
   width: 1172px;
   min-height: 450px;
 }
