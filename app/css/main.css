@@ -269,6 +269,12 @@ body {
   width: 155px;
   color: #363636;
 }
+.unit__title--white-text {
+  color: #fff;
+}
+.unit__title--letter-spacing018 {
+  letter-spacing: 0.18px;
+}
 .unit__horizontal {
   width: 34px;
   margin-left: 0;
@@ -276,6 +282,9 @@ body {
 }
 .unit__horizontal--black-solid {
   border: solid #363636;
+}
+.unit__horizontal--white-solid {
+  border: solid #fff;
 }
 .unit__horizontal--width-small {
   width: 21px;
@@ -333,6 +342,10 @@ body {
 .unit__info--dark-grey-text {
   color: #707070;
 }
+.unit__info--white-blue-text {
+  color: #fff;
+  opacity: 0.5;
+}
 .unit__info--letter-spacing035 {
   letter-spacing: 0.35px;
 }
@@ -366,6 +379,9 @@ body {
 .unit__horiz-inline-center-wrap {
   font-size: 0;
   text-align: center;
+}
+.unit__horiz-inline-wrap {
+  font-size: 0;
 }
 .unit__article {
   font-size: 14px;
