@@ -739,10 +739,17 @@ __submit_theme-aside-submit {
 }
 .icon--ligthinig-blue {
   position: absolute;
-  top: 20px;
+  top: 24px;
   left: 30px;
   height: 38px;
   width: 21px;
-  vertical-align: middle;
   background: url("../img/lightning-blue.png") no-repeat center;
+}
+.icon--raindrop {
+  position: absolute;
+  top: 26px;
+  left: 31px;
+  height: 32px;
+  width: 21px;
+  background: url("../img/raindrop.png") no-repeat center;
 }
