@@ -292,6 +292,11 @@ body {
   font-family: Montserrat, sans-serif;
   text-transform: uppercase;
 }
+.unit__info--norm-bold-text {
+  font-size: 14px;
+  font-weight: 900;
+  font-family: Montserrat, sans-serif;
+}
 .unit__info--black-text {
   color: #363636;
 }
@@ -319,6 +324,9 @@ body {
 .unit__form-search-wrap {
   margin-top: 100px;
 }
+.unit__person-info-wrap {
+  text-align: center;
+}
 .unit__article {
   font-size: 14px;
 }
@@ -330,6 +338,12 @@ body {
 }
 .unit__article--gray-text {
   color: #a0a0a0;
+}
+.unit__article--centered-text {
+  text-align: center;
+}
+.unit__article--text-ind {
+  text-indent: 0.1em;
 }
 .unit__icon-caption {
   display: block;
@@ -647,4 +661,18 @@ __submit_theme-aside-submit {
   height: 28px;
   margin-bottom: 5px;
   background: url("../img/play-arrow-down.png") no-repeat center;
+}
+.icon--person-avatar {
+  height: 60px;
+  margin-bottom: 19px;
+  background: url("../img/avatar.png") no-repeat center;
+}
+.icon--person-rate4 {
+  height: 14px;
+  margin-top: 10px;
+  background: url("../img/rate4.png") no-repeat center;
+}
+.icon--person-rate1none {
+  height: 14px;
+  background: url("../img/rate1none.png") no-repeat center;
 }
