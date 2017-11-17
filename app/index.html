@@ -9,160 +9,190 @@
     </head>
     <body>
         <!-- Шапка сайта-->
-        <!--include header/header.pug-->
+        <header class="header">
+            <!-- Фон для шапки сайта-->
+            <div class="header__bg header__bg-inner header__bg_theme-gray"></div>
+            <!-- Контент для шапки-->
+            <div class="header__content header__content-inner">
+                <!--Фон в контенте шапки-->
+                <div class="header__content-bg header__content-bg-inner header__content-bg_theme-gray"></div>
+                <!--Контейнер в контенте шапки для содержимого типа лого, меню и т.д-->
+                <div class="header__container header__content-container-inner">
+                    <!-- Блок для Лого-->
+                    <div class="logo"><a class="logo__text logo__text_middle-right-place" href="#">fdn</a></div>
+                    <!--Блок для меню-->
+                    <div class="menu content__menu">
+                        <ul class="menu__items">
+                            <li class="menu__item menu__item_facebook-theme"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                            <li class="menu__item menu__item_twitter-theme"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                            <li class="menu__item menu__item_icon-theme">
+                                <div class="menu__item-layer"><img src="../img/forma-1.png" alt="корзина">
+                                    <div class="menu__icon-super menu__icon-super_theme-sq-yellow"><span class="menu__icon-super_theme-text">99</span></div>
+                                </div>
+                            </li>
+                            <li class="menu__item menu__item_icon-theme"><img src="../img/menu.png" alt="меню"></li>
+                        </ul>
+                    </div>
+                    <!-- Название страницы-->
+                    <div class="caption content__caption"><span class="caption__text">our services</span></div>
+                </div>
+            </div>
+        </header>
         <!--Тело сайта-->
         <div class="main main--theme-white-gr">
             <!-- Контент для тела сайта-->
             <div class="main__content main__content-inner main__content_theme-grey">
-                <div class="unit unit--horizontal-double-unit unit--theme-yellow">
-                    <h2 class="unit__title unit__title--big-bold unit__title--theme-unit-black-title">building the world around us</h2>
-                    <hr class="unit__horizontal unit__horizontal--black-solid">
-                    <p class="unit__article unit__article--theme-unit-black-text">Still other clients have reserved for capital improvement projects and will work directly with our Design and Engineering team.</p>
-                    <input class="button button--theme-unit-btn button--black-bg button--text-white unit__button-buttom-left" type="button" value="Read more">
-                </div>
-                <div class="unit"></div>
-                <div class="unit unit--theme-info">
-                    <input class="button button--theme-arrow button--arrow-next button--white-bg unit__button-center" type="button" value="">
-                    <div class="unit__info-wrap"><span class="unit__info unit__info--big-text unit__info--black-text">01<sup class="unit__info unit__info--med-text unit__info--black-text">/03</sup></span></div>
-                    <input class="button button--theme-arrow button--arrow-prev button--white-bg unit__button-center" type="button" value="">
-                </div>
-                <div class="unit"></div>
-                <div class="unit"></div>
-                <div class="unit unit--theme-company-video unit--theme-blue">
-                    <div class="unit__company-video-wrap">
-                        <button class="icon icon--theme-circle icon--blue-bg">
-                            <div class="icon icon--theme-play-arrow"></div>
-                        </button><span class="unit__info unit__info--small-text unit__info--white-text">Company video</span>
+                <div class="main__content-flex-wrap">
+                    <div class="unit unit--horizontal-double-unit unit--theme-yellow">
+                        <h2 class="unit__title unit__title--big-bold unit__title--theme-unit-black-title">building the world around us</h2>
+                        <hr class="unit__horizontal unit__horizontal--black-solid">
+                        <p class="unit__article unit__article--theme-unit-black-text">Still other clients have reserved for capital improvement projects and will work directly with our Design and Engineering team.</p>
+                        <input class="button button--theme-unit-btn button--black-bg button--text-white unit__button-buttom-left" type="button" value="Read more">
                     </div>
-                </div>
-                <div class="unit"></div>
-                <div class="unit unit--theme-info">
-                    <h2 class="unit__title unit__title--big-bold unit__title--text-width">Our services</h2>
-                    <hr class="unit__horizontal unit__horizontal--black-solid">
-                    <p class="unit__article unit__article--theme-unit-black-text unit__article--gray-text">Our mission is to provide the highest level of service for our client-partners from concept through construction.</p>
-                </div>
-                <div class="unit unit--theme-foto"></div>
-                <div class="unit unit--theme-info">
-                    <h3 class="unit__title unit__title--bold unit__title--text-width">General Contracting</h3>
-                    <hr class="unit__horizontal unit__horizontal--black-solid">
-                    <p class="unit__article unit__article--theme-unit-black-text unit__article--gray-text">This allows the Design and Engineering team to originate drawings, specifications, structural calculations, details and scopes of work that deliver exactly what the client had intended to achieve.</p>
-                </div>
-                <div class="unit"></div>
-                <div class="unit unit--theme-info">
-                    <input class="button button--theme-arrow button--arrow-next button--white-bg unit__button-center" type="button" value="">
-                    <div class="unit__info-wrap"><span class="unit__info unit__info--big-text unit__info--black-text">03<sup class="unit__info unit__info--med-text unit__info--black-text">/06</sup></span></div>
-                    <input class="button button--theme-arrow button--arrow-prev-hover button--white-bg unit__button-center" type="button" value="">
-                </div>
-                <div class="unit unit--white">
-                    <h2 class="unit__title unit__title--bold unit__title--text-width">Project design and engineering</h2>
-                    <hr class="unit__horizontal unit__horizontal--black-solid">
-                    <p class="unit__article unit__article--theme-unit-black-text unit__article--gray-text">Through Stage-Gate, Design and Engineering methodology, DMCS ensure client-partners realize clearly defined project objective to achieve intended results.</p>
-                </div>
-                <div class="unit unit--theme-foto"></div>
-                <div class="unit unit--white">
-                    <h2 class="unit__title unit__title--bold unit__title--text-width">Capital improvements</h2>
-                    <hr class="unit__horizontal unit__horizontal--black-solid">
-                    <p class="unit__article unit__article--theme-unit-black-text unit__article--gray-text">This results in scope creep and slippage of the schedule that ultimately result in additional costs to the owner.</p>
-                </div>
-                <div class="unit unit--theme-yellow">
-                    <div class="unit__download-price-wrap">
-                        <div class="icon icon--theme-pdf"></div><span class="unit__info unit__info--small-text unit__info--black-text">Download price</span>
+                    <div class="unit"></div>
+                    <div class="unit unit--theme-info">
+                        <input class="button button--theme-arrow button--arrow-next button--white-bg unit__button-center" type="button" value="">
+                        <div class="unit__info-wrap"><span class="unit__info unit__info--big-text unit__info--black-text">01<sup class="unit__info unit__info--med-text unit__info--black-text">/03</sup></span></div>
+                        <input class="button button--theme-arrow button--arrow-prev button--white-bg unit__button-center" type="button" value="">
                     </div>
-                </div>
-                <div class="unit unit--theme-blue">
-                    <div class="unit__contact-us-wrap">
-                        <div class="icon icon--theme-contact-circle"></div>
-                        <div class="icon icon--theme-play-arrow-down"></div><span class="unit__info unit__info--small-text unit__info--white-text">Contact us</span>
+                    <div class="unit"></div>
+                    <div class="unit"></div>
+                    <div class="unit unit--theme-company-video unit--theme-blue">
+                        <div class="unit__company-video-wrap">
+                            <button class="icon icon--theme-circle icon--blue-bg">
+                                <div class="icon icon--theme-play-arrow"></div>
+                            </button><span class="unit__info unit__info--small-text unit__info--white-text">Company video</span>
+                        </div>
                     </div>
-                </div>
-                <div class="unit unit--horizontal-double-unit unit--transparent">
-                    <div class="unit__form-search-wrap">
-                        <form class="form">
-                            <input class="form__input form__input--theme-unit-search form__input--border-bottom-only form__input--border-white" type="text" name="search-text" value="What you're looking for">
-                            <button class="form__button form__button--right-button form__button--theme-search-button"><i class="form__button-icon fa fa-search" aria-hidden="true"></i></button>
-                        </form>
+                    <div class="unit"></div>
+                    <div class="unit unit--theme-info">
+                        <h2 class="unit__title unit__title--big-bold unit__title--text-width">Our services</h2>
+                        <hr class="unit__horizontal unit__horizontal--black-solid">
+                        <p class="unit__article unit__article--theme-unit-black-text unit__article--gray-text">Our mission is to provide the highest level of service for our client-partners from concept through construction.</p>
                     </div>
-                </div>
-                <div class="unit unit--horizontal-double-unit unit--white">
-                    <div class="unit__person-info-wrap">
-                        <div class="icon icon--person-avatar"></div><span class="unit__info unit__info--norm-bold-text">Martin H.Jhonsons</span>
-                        <div class="icon icon--person-rate4"></div>
+                    <div class="unit unit--theme-foto"></div>
+                    <div class="unit unit--theme-info">
+                        <h3 class="unit__title unit__title--bold unit__title--text-width">General Contracting</h3>
+                        <hr class="unit__horizontal unit__horizontal--black-solid">
+                        <p class="unit__article unit__article--theme-unit-black-text unit__article--gray-text">This allows the Design and Engineering team to originate drawings, specifications, structural calculations, details and scopes of work that deliver exactly what the client had intended to achieve.</p>
                     </div>
-                    <p class="unit__article unit__article--text-ind unit__article--centered-text unit__article--theme-unit-black-text unit__article--gray-text">Together, we'll couple our knowledge, expertise, and innovative capabilities with your astute knowledge of your business—to maximize and optimize results. This is all accomplished in a number of ways.</p>
-                </div>
-                <div class="unit unit--horizontal-double-unit">
-                    <h2 class="unit__title unit__title--big-bold unit__title--theme-unit-black-title">Your building is in good hands</h2>
-                    <hr class="unit__horizontal unit__horizontal--black-solid">
-                    <p class="unit__article unit__article--theme-unit-black-text unit__article--text-width419">Our mission is to provide the highest level of service for our client-partners from concept through construction.</p>
-                    <input class="button button--theme-unit-btn button--black-bg button--text-white" type="button" value="About company">
-                </div>
-                <div class="unit unit--horizontal-double-unit unit--soft-gold">
-                    <div class="unit__person-info-wrap">
-                        <div class="icon icon--person-avatar"></div><span class="unit__info unit__info--norm-bold-text">Tony SH. Schults</span>
-                        <div class="icon icon--person-rate5"></div>
+                    <div class="unit"></div>
+                    <div class="unit unit--theme-info">
+                        <input class="button button--theme-arrow button--arrow-next button--white-bg unit__button-center" type="button" value="">
+                        <div class="unit__info-wrap"><span class="unit__info unit__info--big-text unit__info--black-text">03<sup class="unit__info unit__info--med-text unit__info--black-text">/06</sup></span></div>
+                        <input class="button button--theme-arrow button--arrow-prev-hover button--white-bg unit__button-center" type="button" value="">
                     </div>
-                    <p class="unit__article unit__article--text-ind unit__article--centered-text unit__article--theme-unit-black-text unit__article--grey-yellow-text">When selecting DMCS as the design-build team, clients benefit in terms of efficiency and continuity that translate into cost savings and optimized schedules. Contact us today and see how DMCS can best serve you from concept-through-construction.</p>
-                    <div class="unit__horiz-inline-center-wrap">
-                        <hr class="unit__horizontal unit__horizontal--black-solid unit__horizontal--width-small unit__horizontal--opasity-half unit__horizontal--inline">
-                        <hr class="unit__horizontal unit__horizontal--black-solid unit__horizontal--width-small unit__horizontal--inline">
+                    <div class="unit unit--white">
+                        <h2 class="unit__title unit__title--bold unit__title--text-width">Project design and engineering</h2>
+                        <hr class="unit__horizontal unit__horizontal--black-solid">
+                        <p class="unit__article unit__article--theme-unit-black-text unit__article--gray-text">Through Stage-Gate, Design and Engineering methodology, DMCS ensure client-partners realize clearly defined project objective to achieve intended results.</p>
                     </div>
-                </div>
-                <div class="unit unit--white">
-                    <div class="icon icon--blue-square">
-                        <div class="icon icon--ligthinig-blue"></div>
-                    </div><span class="unit__info unit__info--block unit__info--big-text unit__info--dark-grey-text">55 000</span><span class="unit__info unit__info--block unit__info--norm-text unit__info--grey-text unit__info--letter-spacing035">Expert Witness</span>
-                </div>
-                <div class="unit">
-                    <div class="icon icon--blue-square">
-                        <div class="icon icon--raindrop"></div>
-                    </div><span class="unit__info unit__info--block unit__info--big-text unit__info--dark-grey-text">124 600</span><span class="unit__info unit__info--block unit__info--norm-text unit__info--grey-text unit__info--letter-spacing035">Construction</span>
-                </div>
-                <div class="unit unit--theme-blue">
-                    <h2 class="unit__title unit__title--big-bold unit__title--letter-spacing018 unit__title--white-text">News</h2>
-                    <p class="unit__info unit__info--norm-text unit__info--white-blue-text">12 february, 2015</p>
-                    <h3 class="unit__title unit__title--bold unit__title--white-text">Project Design and Engineering Services</h3>
-                    <p class="unit__info unit__info--norm-text unit__info--white-blue-text">23 comments</p>
-                    <div class="unit__horiz-inline-wrap">
-                        <hr class="unit__horizontal unit__horizontal--white-solid unit__horizontal--width-small unit__horizontal--inline">
-                        <hr class="unit__horizontal unit__horizontal--white-solid unit__horizontal--width-small unit__horizontal--opasity-half unit__horizontal--inline">
-                        <hr class="unit__horizontal unit__horizontal--white-solid unit__horizontal--width-small unit__horizontal--opasity-half unit__horizontal--inline">
+                    <div class="unit unit--theme-foto"></div>
+                    <div class="unit unit--white">
+                        <h2 class="unit__title unit__title--bold unit__title--text-width">Capital improvements</h2>
+                        <hr class="unit__horizontal unit__horizontal--black-solid">
+                        <p class="unit__article unit__article--theme-unit-black-text unit__article--gray-text">This results in scope creep and slippage of the schedule that ultimately result in additional costs to the owner.</p>
                     </div>
-                </div>
-                <div class="unit unit--white">
-                    <div class="unit__person-info-wrap">
-                        <div class="icon icon--person-avatar"></div><span class="unit__info unit__info--norm-bold-text unit__info--black-text">David Mc. Adams</span>
-                        <div class="icon icon--person-rate4"></div>
+                    <div class="unit unit--theme-yellow">
+                        <div class="unit__download-price-wrap">
+                            <div class="icon icon--theme-pdf"></div><span class="unit__info unit__info--small-text unit__info--black-text">Download price</span>
+                        </div>
                     </div>
-                    <p class="unit__article unit__article--text-ind unit__article--centered-text unit__article--theme-unit-black-text unit__article--gray-text">In most urban areas, construction has already built existing structures, many having been standing for decades.</p>
-                </div>
-                <div class="unit">
-                    <div class="icon icon--blue-square">
-                        <div class="icon icon--setting-tool-blue"></div>
-                    </div><span class="unit__info unit__info--block unit__info--big-text unit__info--dark-grey-text">18 000</span><span class="unit__info unit__info--block unit__info--norm-text unit__info--grey-text unit__info--letter-spacing035">Procurement</span>
-                </div>
-                <div class="unit unit--white">
-                    <div class="icon icon--blue-square">
-                        <div class="icon icon--light-bulb"></div>
-                    </div><span class="unit__info unit__info--block unit__info--big-text unit__info--dark-grey-text">78 150</span><span class="unit__info unit__info--block unit__info--norm-text unit__info--grey-text unit__info--letter-spacing035">Project Managments</span>
-                </div>
-                <div class="unit unit--theme-yellow">
-                    <div class="unit__download-price-wrap">
-                        <div class="icon icon--icon-stars"></div><span class="unit__info unit__info--small-text unit__info--black-text">Work with us</span>
+                    <div class="unit unit--theme-blue">
+                        <div class="unit__contact-us-wrap">
+                            <div class="icon icon--theme-contact-circle"></div>
+                            <div class="icon icon--theme-play-arrow-down"></div><span class="unit__info unit__info--small-text unit__info--white-text">Contact us</span>
+                        </div>
                     </div>
-                </div>
-                <div class="unit unit--theme-info">
-                    <input class="button button--theme-arrow button--arrow-next button--white-bg unit__button-center" type="button" value="">
-                    <div class="unit__info-wrap"><span class="unit__info unit__info--big-text unit__info--black-text">01<sup class="unit__info unit__info--med-text unit__info--black-text">/09</sup></span></div>
-                    <input class="button button--theme-arrow button--arrow-prev button--white-bg unit__button-center" type="button" value="">
-                </div>
-                <div class="unit unit--theme-blue">
-                    <h2 class="unit__title unit__title--big-bold unit__title--letter-spacing018 unit__title--white-text">subscribe</h2>
-                    <hr class="unit__horizontal unit__horizontal--white-solid">
-                    <div class="unit__inner-form-aside">
-                        <form class="form">
-                            <input class="form__input form__input--theme-unit-search-white" type="text" name="email" value="E-mail">
-                            <input class="form__submit form__submit--theme-link-submit form__submit--small-text form__submit--white-text" type="submit" value="sign up">
-                        </form>
+                    <div class="unit unit--horizontal-double-unit unit--transparent">
+                        <div class="unit__form-search-wrap">
+                            <form class="form">
+                                <input class="form__input form__input--theme-unit-search form__input--border-bottom-only form__input--border-white" type="text" name="search-text" value="What you're looking for">
+                                <button class="form__button form__button--right-button form__button--theme-search-button"><i class="form__button-icon fa fa-search" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="unit unit--horizontal-double-unit unit--white">
+                        <div class="unit__person-info-wrap">
+                            <div class="icon icon--person-avatar"></div><span class="unit__info unit__info--norm-bold-text">Martin H.Jhonsons</span>
+                            <div class="icon icon--person-rate4"></div>
+                        </div>
+                        <p class="unit__article unit__article--text-ind unit__article--centered-text unit__article--theme-unit-black-text unit__article--gray-text">Together, we'll couple our knowledge, expertise, and innovative capabilities with your astute knowledge of your business—to maximize and optimize results. This is all accomplished in a number of ways.</p>
+                    </div>
+                    <div class="unit unit--horizontal-double-unit">
+                        <h2 class="unit__title unit__title--big-bold unit__title--theme-unit-black-title">Your building is in good hands</h2>
+                        <hr class="unit__horizontal unit__horizontal--black-solid">
+                        <p class="unit__article unit__article--theme-unit-black-text unit__article--text-width419">Our mission is to provide the highest level of service for our client-partners from concept through construction.</p>
+                        <input class="button button--theme-unit-btn button--black-bg button--text-white" type="button" value="About company">
+                    </div>
+                    <div class="unit unit--horizontal-double-unit unit--soft-gold">
+                        <div class="unit__person-info-wrap">
+                            <div class="icon icon--person-avatar"></div><span class="unit__info unit__info--norm-bold-text">Tony SH. Schults</span>
+                            <div class="icon icon--person-rate5"></div>
+                        </div>
+                        <p class="unit__article unit__article--text-ind unit__article--centered-text unit__article--theme-unit-black-text unit__article--grey-yellow-text">When selecting DMCS as the design-build team, clients benefit in terms of efficiency and continuity that translate into cost savings and optimized schedules. Contact us today and see how DMCS can best serve you from concept-through-construction.</p>
+                        <div class="unit__horiz-inline-center-wrap">
+                            <hr class="unit__horizontal unit__horizontal--black-solid unit__horizontal--width-small unit__horizontal--opasity-half unit__horizontal--inline">
+                            <hr class="unit__horizontal unit__horizontal--black-solid unit__horizontal--width-small unit__horizontal--inline">
+                        </div>
+                    </div>
+                    <div class="unit unit--white">
+                        <div class="icon icon--blue-square">
+                            <div class="icon icon--ligthinig-blue"></div>
+                        </div><span class="unit__info unit__info--block unit__info--big-text unit__info--dark-grey-text">55 000</span><span class="unit__info unit__info--block unit__info--norm-text unit__info--grey-text unit__info--letter-spacing035">Expert Witness</span>
+                    </div>
+                    <div class="unit">
+                        <div class="icon icon--blue-square">
+                            <div class="icon icon--raindrop"></div>
+                        </div><span class="unit__info unit__info--block unit__info--big-text unit__info--dark-grey-text">124 600</span><span class="unit__info unit__info--block unit__info--norm-text unit__info--grey-text unit__info--letter-spacing035">Construction</span>
+                    </div>
+                    <div class="unit unit--theme-blue">
+                        <h2 class="unit__title unit__title--big-bold unit__title--letter-spacing018 unit__title--white-text">News</h2>
+                        <p class="unit__info unit__info--norm-text unit__info--white-blue-text">12 february, 2015</p>
+                        <h3 class="unit__title unit__title--bold unit__title--white-text">Project Design and Engineering Services</h3>
+                        <p class="unit__info unit__info--norm-text unit__info--white-blue-text">23 comments</p>
+                        <div class="unit__horiz-inline-wrap">
+                            <hr class="unit__horizontal unit__horizontal--white-solid unit__horizontal--width-small unit__horizontal--inline">
+                            <hr class="unit__horizontal unit__horizontal--white-solid unit__horizontal--width-small unit__horizontal--opasity-half unit__horizontal--inline">
+                            <hr class="unit__horizontal unit__horizontal--white-solid unit__horizontal--width-small unit__horizontal--opasity-half unit__horizontal--inline">
+                        </div>
+                    </div>
+                    <div class="unit unit--white">
+                        <div class="unit__person-info-wrap">
+                            <div class="icon icon--person-avatar"></div><span class="unit__info unit__info--norm-bold-text unit__info--black-text">David Mc. Adams</span>
+                            <div class="icon icon--person-rate4"></div>
+                        </div>
+                        <p class="unit__article unit__article--text-ind unit__article--centered-text unit__article--theme-unit-black-text unit__article--gray-text">In most urban areas, construction has already built existing structures, many having been standing for decades.</p>
+                    </div>
+                    <div class="unit">
+                        <div class="icon icon--blue-square">
+                            <div class="icon icon--setting-tool-blue"></div>
+                        </div><span class="unit__info unit__info--block unit__info--big-text unit__info--dark-grey-text">18 000</span><span class="unit__info unit__info--block unit__info--norm-text unit__info--grey-text unit__info--letter-spacing035">Procurement</span>
+                    </div>
+                    <div class="unit unit--white">
+                        <div class="icon icon--blue-square">
+                            <div class="icon icon--light-bulb"></div>
+                        </div><span class="unit__info unit__info--block unit__info--big-text unit__info--dark-grey-text">78 150</span><span class="unit__info unit__info--block unit__info--norm-text unit__info--grey-text unit__info--letter-spacing035">Project Managments</span>
+                    </div>
+                    <div class="unit unit--theme-yellow">
+                        <div class="unit__download-price-wrap">
+                            <div class="icon icon--icon-stars"></div><span class="unit__info unit__info--small-text unit__info--black-text">Work with us</span>
+                        </div>
+                    </div>
+                    <div class="unit unit--theme-info">
+                        <input class="button button--theme-arrow button--arrow-next button--white-bg unit__button-center" type="button" value="">
+                        <div class="unit__info-wrap"><span class="unit__info unit__info--big-text unit__info--black-text">01<sup class="unit__info unit__info--med-text unit__info--black-text">/09</sup></span></div>
+                        <input class="button button--theme-arrow button--arrow-prev button--white-bg unit__button-center" type="button" value="">
+                    </div>
+                    <div class="unit unit--theme-blue">
+                        <h2 class="unit__title unit__title--big-bold unit__title--letter-spacing018 unit__title--white-text">subscribe</h2>
+                        <hr class="unit__horizontal unit__horizontal--white-solid">
+                        <div class="unit__inner-form-aside">
+                            <form class="form">
+                                <input class="form__input form__input--theme-unit-search-white" type="text" name="email" value="E-mail">
+                                <input class="form__submit form__submit--theme-link-submit form__submit--small-text form__submit--white-text" type="submit" value="sign up">
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="unit unit--vertical-double-unit unit--white">
