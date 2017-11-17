@@ -238,6 +238,9 @@ body {
 .unit--white {
   background-color: #fff;
 }
+.unit--soft-gold {
+  background-color: #fcf3d3;
+}
 .unit--transparent {
   background-color: transparent;
 }
@@ -273,6 +276,19 @@ body {
 }
 .unit__horizontal--black-solid {
   border: solid #363636;
+}
+.unit__horizontal--width-small {
+  width: 21px;
+}
+.unit__horizontal--opasity-half {
+  opacity: 0.5;
+}
+.unit__horizontal--inline {
+  display: inline-block;
+  margin-right: 15px;
+}
+.unit__horizontal--inline:last-child {
+  margin-right: 0;
 }
 .unit__info--med-text {
   font-size: 20px;
@@ -327,6 +343,10 @@ body {
 .unit__person-info-wrap {
   text-align: center;
 }
+.unit__horiz-inline-center-wrap {
+  font-size: 0;
+  text-align: center;
+}
 .unit__article {
   font-size: 14px;
 }
@@ -339,6 +359,9 @@ body {
 .unit__article--gray-text {
   color: #a0a0a0;
 }
+.unit__article--grey-yellow-text {
+  color: #777463;
+}
 .unit__article--text-width419 {
   width: 419px;
 }
@@ -346,7 +369,7 @@ body {
   text-align: center;
 }
 .unit__article--text-ind {
-  text-indent: 0.1em;
+  text-indent: 0.5em;
 }
 .unit__icon-caption {
   display: block;
@@ -680,4 +703,9 @@ __submit_theme-aside-submit {
 .icon--person-rate1none {
   height: 14px;
   background: url("../img/rate1none.png") no-repeat center;
+}
+.icon--person-rate5 {
+  height: 14px;
+  margin-top: 10px;
+  background: url("../img/rate5.png") no-repeat center;
 }
