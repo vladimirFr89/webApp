@@ -448,6 +448,10 @@ body {
   bottom: 0;
   right: 0;
 }
+.unit__fix-button-view-project-wrap {
+  position: absolute;
+  bottom: 45px;
+}
 .unit__inner-form-aside {
   position: relative;
   bottom: -54px;
