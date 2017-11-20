@@ -313,7 +313,7 @@ body {
   text-transform: none;
 }
 .unit__title--theme-unit-black-title {
-  width: 294px;
+  width: 306px;
   color: #363636;
 }
 .unit__title--text-width {
@@ -450,7 +450,11 @@ body {
 }
 .unit__fix-button-view-project-wrap {
   position: absolute;
-  bottom: 45px;
+  bottom: 48px;
+}
+.unit__fix-btn-read-more-wrap {
+  position: absolute;
+  bottom: 58px;
 }
 .unit__inner-form-aside {
   position: relative;
@@ -715,6 +719,7 @@ body {
 .form__submit--theme-link-submit {
   float: right;
   margin-top: 30px;
+  margin-right: -10px;
   border: none;
   background-color: #2297d8;
 }
@@ -852,7 +857,7 @@ body {
 }
 .icon--person-avatar {
   height: 60px;
-  margin-bottom: 19px;
+  margin-bottom: 17px;
   background: url("../img/avatar.png") no-repeat center;
 }
 .icon--person-rate4 {
