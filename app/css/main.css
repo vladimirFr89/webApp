@@ -440,28 +440,13 @@ body {
   bottom: -54px;
 }
 .unit__article {
-  font-size: 14px;
-}
-.unit__article--theme-unit-black-text {
-  font-weight: 600;
-  line-height: 22px;
+  font-size: 13px;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
   font-family: Montserrat, sans-serif;
+}
+.unit__article--black-text {
   color: #363636;
-}
-.unit__article--gray-text {
-  color: #a0a0a0;
-}
-.unit__article--grey-yellow-text {
-  color: #777463;
-}
-.unit__article--text-width419 {
-  width: 419px;
-}
-.unit__article--centered-text {
-  text-align: center;
-}
-.unit__article--text-ind {
-  text-indent: 0.5em;
 }
 .unit__icon-caption {
   display: block;
