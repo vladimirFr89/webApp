@@ -94,7 +94,7 @@ body {
 .logo__text {
   color: #fff;
   font-family: Montserrat, sans-serif;
-  font-size: 28px;
+  font-size: 27px;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -105,8 +105,8 @@ body {
 .logo__text-inner {
   display: block;
   position: relative;
-  top: 26px;
-  left: 21px;
+  top: 25px;
+  left: 23px;
 }
 /*====================Блок меню==================*/
 .menu__items {
