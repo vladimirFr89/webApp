@@ -326,6 +326,12 @@ body {
 .unit__title--letter-spacing018 {
   letter-spacing: 0.18px;
 }
+.unit__title--top-margin2 {
+  margin-top: 2px;
+}
+.unit__title--fix-margin-bottom-news {
+  margin-bottom: 1em;
+}
 .unit__horizontal {
   width: 34px;
   margin-left: 0;
@@ -748,7 +754,7 @@ body {
 }
 .footer__container__container-inner {
   position: relative;
-  top: 29px;
+  top: 33px;
 }
 .footer__container__text-inner {
   display: inline-block;
@@ -901,6 +907,6 @@ body {
 }
 .icon--icon-stars {
   height: 73px;
-  margin-bottom: 17px;
+  margin-bottom: 12px;
   background: url("../img/icon-star.png") no-repeat center;
 }
