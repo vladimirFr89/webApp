@@ -1,4 +1,5 @@
 .unit
+  position relative
   width 233px
   height 233px
   padding 30px
@@ -71,8 +72,8 @@
 
   //Элемент заголовок
   &__title
-    margin-top 0
-    margin-bottom .7em
+    margin-top -4px
+    margin-bottom .8em
     font-size 14px
 
     &--bold
@@ -82,6 +83,7 @@
       color #363636
 
     &--big-bold
+      margin-bottom .45em
       font-size 27px
       font-weight 700
       font-family Montserrat, sans-serif;
@@ -108,7 +110,6 @@
   &__horizontal
     width 34px
     margin-left 0
-    border-width 2px
 
     &--black-solid
       border solid #363636
@@ -216,6 +217,10 @@
   &__horiz-inline-wrap
     font-size 0
 
+  &__horiz-bottom-wrap
+    position absolute
+    bottom 30px
+
   &__bottom-right-unit-wrap
     position absolute
     bottom 0
@@ -224,7 +229,7 @@
   //Размещение формы в unit aside
   &__inner-form-aside
     position relative
-    bottom -52px
+    bottom -54px
 
   //Элемент article
   &__article
@@ -279,6 +284,7 @@
     &--down
       left 130px
       bottom -24px
+      z-index 10
       border-top 12px solid #ffffff
 
     &--up
