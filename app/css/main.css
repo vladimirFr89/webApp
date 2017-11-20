@@ -227,6 +227,18 @@ body {
 .unit--inline {
   display: inline-block;
 }
+.unit--bg-layer-unit {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 0;
+}
+.unit--bg-unit-width959 {
+  position: absolute;
+  height: 293px;
+  width: 959px;
+  padding: 0;
+}
 .unit--theme-info {
   background-color: #fff;
 }
@@ -244,6 +256,9 @@ body {
 }
 .unit--soft-gold {
   background-color: #fcf3d3;
+}
+.unit--dark-grey {
+  background-color: #36383b;
 }
 .unit--transparent {
   background-color: transparent;
