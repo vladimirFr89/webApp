@@ -225,6 +225,18 @@ body {
 .unit--vertical-double-unit {
   height: 526px;
 }
+.unit--big-bg-layer-unit {
+  position: relative;
+  width: 586px;
+  height: 586px;
+  padding: 0;
+}
+.unit--vertical-double-bg-layer-unit {
+  position: relative;
+  width: 293px;
+  height: 586px;
+  padding: 0;
+}
 .unit--inline {
   display: inline-block;
 }
@@ -405,6 +417,11 @@ body {
 }
 .unit__horiz-inline-wrap {
   font-size: 0;
+}
+.unit__bottom-right-unit-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .unit__inner-form-aside {
   position: relative;
