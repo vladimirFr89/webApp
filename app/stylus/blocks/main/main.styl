@@ -8,7 +8,8 @@
     position relative
     width 1172px
     min-height 450px
-    &_theme-grey
+
+    &--theme-grey
       background-color #d6d6d6
 
     &--theme-transparent
@@ -18,11 +19,25 @@
     display flex
     flex-wrap wrap
 
-  // Нахождение контента внутри
   &__content-inner
     margin-left auto
     margin-right auto
-    &::after
-      content ""
-      display table
-      clear both
+
+  &__column-main
+    width 879px
+    //Для размещения блоков в линию без пропусков
+    &--theme-inline
+      font-size 0
+
+  &__column-aside
+    width 293px
+
+  &__column-inner-left
+    margin-right 293px
+
+  &__column-inner-right
+    float right
+
+  &__double-unit
+    display inline-block
+    vertical-align top
