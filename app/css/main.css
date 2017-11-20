@@ -293,45 +293,23 @@ body {
   background-color: transparent;
 }
 .unit__title {
-  margin-top: -4px;
-  margin-bottom: 0.8em;
   font-size: 14px;
 }
-.unit__title--bold {
-  font-family: Montserrat, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #363636;
-}
 .unit__title--big-bold {
-  margin-bottom: 0.45em;
-  font-size: 27px;
-  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
   font-family: Montserrat, sans-serif;
   text-transform: uppercase;
 }
-.unit__title--uppercase-disabled {
-  text-transform: none;
-}
-.unit__title--theme-unit-black-title {
-  width: 306px;
-  color: #363636;
-}
-.unit__title--text-width {
-  width: 155px;
-  color: #363636;
-}
-.unit__title--white-text {
-  color: #fff;
-}
-.unit__title--letter-spacing018 {
-  letter-spacing: 0.18px;
-}
-.unit__title--top-margin2 {
+.unit__title--big-width {
+  width: 315px;
   margin-top: 2px;
+  margin-bottom: 10px;
+  line-height: 1.4;
 }
-.unit__title--fix-margin-bottom-news {
-  margin-bottom: 1em;
+.unit__title--black-text {
+  color: #363636;
 }
 .unit__horizontal {
   width: 34px;
