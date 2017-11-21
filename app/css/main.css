@@ -894,34 +894,42 @@ body {
   text-align: center;
   background: url("../img/rectangle-blue.png") no-repeat center;
 }
+.icon--blue-square-bg {
+  position: relative;
+  top: 8px;
+  left: 8px;
+  width: 67px;
+  height: 67px;
+  background-color: #fff;
+}
 .icon--ligthinig-blue {
   position: absolute;
-  top: 24px;
-  left: 30px;
+  top: 14px;
+  left: 22px;
   height: 38px;
   width: 21px;
   background: url("../img/lightning-blue.png") no-repeat center;
 }
 .icon--raindrop {
   position: absolute;
-  top: 26px;
-  left: 31px;
+  top: 18px;
+  left: 23px;
   height: 32px;
   width: 21px;
   background: url("../img/raindrop.png") no-repeat center;
 }
 .icon--setting-tool-blue {
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 17px;
+  left: 17px;
   height: 34px;
   width: 34px;
   background: url("../img/setting-tool-blue.png") no-repeat center;
 }
 .icon--light-bulb {
   position: absolute;
-  top: 25px;
-  left: 30px;
+  top: 17px;
+  left: 22px;
   height: 34px;
   width: 23px;
   background: url("../img/light-bulb.png") no-repeat center;
