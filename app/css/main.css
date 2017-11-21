@@ -333,58 +333,20 @@ body {
 .unit__horizontal--inline:last-child {
   margin-right: 0;
 }
-.unit__info--block {
-  display: block;
-}
-.unit__info--med-text {
-  font-size: 20px;
-  font-weight: 600;
+.unit__info--medium {
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: 3px;
   font-family: Montserrat, sans-serif;
 }
-.unit__info--big-text {
+.unit__info--big-medium {
   font-size: 36px;
-  font-weight: 600;
-  letter-spacing: 3.94px;
-  font-family: Montserrat, sans-serif;
-  text-transform: uppercase;
-}
-.unit__info--small-text {
-  font-size: 12px;
-  font-weight: 600;
-  font-family: Montserrat, sans-serif;
-  text-transform: uppercase;
-}
-.unit__info--norm-bold-text {
-  font-size: 14px;
-  font-weight: 900;
-  font-family: Montserrat, sans-serif;
-}
-.unit__info--norm-text {
-  font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
+  letter-spacing: 3px;
   font-family: Montserrat, sans-serif;
 }
 .unit__info--black-text {
   color: #363636;
-}
-.unit__info--white-text {
-  color: #fff;
-}
-.unit__info--grey-text {
-  color: #a0a0a0;
-}
-.unit__info--dark-grey-text {
-  color: #707070;
-}
-.unit__info--white-blue-text {
-  color: #fff;
-  opacity: 0.5;
-}
-.unit__info--letter-spacing035 {
-  letter-spacing: 0.35px;
-}
-.unit__info--letter-spacing047 {
-  letter-spacing: 0.47px;
 }
 .unit__info-wrap {
   display: block;
@@ -463,6 +425,9 @@ body {
 }
 .unit__button-left {
   margin-top: 10px;
+}
+.unit__button-arrow-wrap {
+  padding: 18px 106px;
 }
 .unit__arrow {
   position: absolute;
@@ -743,6 +708,11 @@ body {
 .button {
   font-size: 12px;
 }
+.button--theme-arrow {
+  width: 22px;
+  height: 28px;
+  border: none;
+}
 .button--theme-unit-btn {
   padding: 15px 25px 16px 21px;
   font-weight: 600;
@@ -768,12 +738,8 @@ body {
 .button--yellow-bg {
   background-color: #ffe400;
 }
-.button--theme-arrow {
-  width: 30px;
-  height: 30px;
-  border: none;
-}
 .button--arrow-next {
+  padding-left: 5px;
   background: url("../img/arr-next.png") no-repeat center;
 }
 .button--arrow-prev {
@@ -881,4 +847,8 @@ body {
   height: 73px;
   margin-bottom: 12px;
   background: url("../img/icon-star.png") no-repeat center;
+}
+.icon--arrow-next-inside {
+  border: 5px solid transparent;
+  border-left: 8px solid #fff;
 }
