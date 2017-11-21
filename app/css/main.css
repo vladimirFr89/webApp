@@ -319,7 +319,7 @@ body {
   margin-bottom: 15px;
 }
 .unit__title--med-width-h3 {
-  width: 180px;
+  width: 170px;
   margin-top: -3px;
   margin-bottom: 15px;
 }
@@ -460,18 +460,21 @@ body {
 .unit__button-arrow-wrap {
   padding: 18px 106px;
 }
+.unit__fix-padding-unit-with-arrow-hower {
+  height: 4px;
+}
 .unit__arrow {
   position: absolute;
   border: 12px solid transparent;
 }
 .unit__arrow--up {
-  left: 130px;
-  top: -24px;
+  left: 133px;
+  top: -22px;
   border-bottom: 12px solid #fff;
 }
 .unit__arrow--right {
   right: -24px;
-  bottom: 130px;
+  bottom: 132px;
   z-index: 10;
   border-left: 12px solid #fff;
 }
@@ -790,6 +793,8 @@ body {
   background: url("../img/arr-prev.png") no-repeat center;
 }
 .button--arrow-prev-hover {
+  padding-left: 0;
+  padding-right: 5px;
   background: url("../img/arr-prev-hover.png") no-repeat center;
 }
 /*===============================Блок иконка============================*/
