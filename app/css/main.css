@@ -350,7 +350,8 @@ body {
 }
 .unit__info-wrap {
   display: block;
-  margin: 45px 0 35px;
+  height: 44px;
+  margin: 24px 0 18px;
   text-align: center;
 }
 .unit__company-video-wrap {
@@ -743,6 +744,8 @@ body {
   background: url("../img/arr-next.png") no-repeat center;
 }
 .button--arrow-prev {
+  padding-left: 0;
+  padding-right: 6px;
   background: url("../img/arr-prev.png") no-repeat center;
 }
 .button--arrow-prev-hover {
@@ -851,4 +854,8 @@ body {
 .icon--arrow-next-inside {
   border: 5px solid transparent;
   border-left: 8px solid #fff;
+}
+.icon--arrow-prev-inside {
+  border: 5px solid transparent;
+  border-right: 8px solid #fff;
 }
