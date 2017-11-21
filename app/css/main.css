@@ -838,6 +838,17 @@ body {
   height: 54px;
   background: url("../img/contact-circle.png") no-repeat center;
 }
+.icon--theme-contact-circle-bg {
+  position: relative;
+  top: 5px;
+  width: 44px;
+  height: 44px;
+  margin: auto;
+  -moz-border-radius: 22px;
+  -webkit-border-radius: 22px;
+  border-radius: 22px;
+  background-color: #2297d8;
+}
 .icon--theme-play-arrow-down {
   position: relative;
   top: -8px;
