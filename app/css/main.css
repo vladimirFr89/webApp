@@ -296,9 +296,8 @@ body {
   font-size: 14px;
 }
 .unit__title--big-bold {
-  font-size: 25px;
-  letter-spacing: 0.5px;
-  font-weight: bold;
+  font-size: 27px;
+  font-weight: 700;
   font-family: Montserrat, sans-serif;
   text-transform: uppercase;
 }
@@ -306,7 +305,7 @@ body {
   width: 315px;
   margin-top: 2px;
   margin-bottom: 10px;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 .unit__title--black-text {
   color: #363636;
@@ -440,9 +439,9 @@ body {
   bottom: -54px;
 }
 .unit__article {
-  font-size: 13px;
-  line-height: 1.7;
-  letter-spacing: 0.5px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
   font-family: Montserrat, sans-serif;
 }
 .unit__article--black-text {
@@ -742,12 +741,11 @@ body {
 }
 /*===============================Блок кнопка============================*/
 .button {
-  font-size: 11px;
-  letter-spacing: 0.5px;
+  font-size: 12px;
 }
 .button--theme-unit-btn {
-  padding: 16px 27px 16px 22px;
-  font-weight: bold;
+  padding: 15px 25px 16px 21px;
+  font-weight: 600;
   font-family: Montserrat, sans-serif;
   text-transform: uppercase;
   border: none;
