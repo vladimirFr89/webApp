@@ -295,6 +295,12 @@ body {
 .unit__title {
   font-size: 14px;
 }
+.unit__title--med-bold {
+  width: 155px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+}
 .unit__title--big-bold {
   font-size: 27px;
   font-weight: 700;
@@ -310,6 +316,11 @@ body {
 .unit__title--med-width {
   width: 200px;
   margin-top: -8px;
+  margin-bottom: 15px;
+}
+.unit__title--med-width-h3 {
+  width: 180px;
+  margin-top: -3px;
   margin-bottom: 15px;
 }
 .unit__title--black-text {
@@ -453,16 +464,27 @@ body {
   position: absolute;
   border: 12px solid transparent;
 }
+.unit__arrow--up {
+  left: 130px;
+  top: -24px;
+  border-bottom: 12px solid #fff;
+}
+.unit__arrow--right {
+  right: -24px;
+  bottom: 130px;
+  z-index: 10;
+  border-left: 12px solid #fff;
+}
 .unit__arrow--down {
   left: 130px;
   bottom: -24px;
   z-index: 10;
   border-top: 12px solid #fff;
 }
-.unit__arrow--up {
-  left: 130px;
-  top: -24px;
-  border-bottom: 12px solid #fff;
+.unit__arrow--left {
+  left: -24px;
+  bottom: 134px;
+  border-right: 12px solid #fff;
 }
 .unit__number {
   width: 71px;
