@@ -354,6 +354,11 @@ body {
   font-weight: 600;
   font-family: Montserrat, sans-serif;
 }
+.unit__info--norm-medium {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Montserrat, sans-serif;
+}
 .unit__info--medium {
   font-size: 21px;
   font-weight: 500;
@@ -439,6 +444,12 @@ body {
 }
 .unit__article--gray-text {
   color: #a0a0a0;
+}
+.unit__article--grey-yellow-text {
+  color: #777463;
+}
+.unit__article--centered-text {
+  text-align: center;
 }
 .unit__icon-caption {
   display: block;
