@@ -333,6 +333,11 @@ body {
 .unit__horizontal--inline:last-child {
   margin-right: 0;
 }
+.unit__info--small-medium {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: Montserrat, sans-serif;
+}
 .unit__info--medium {
   font-size: 21px;
   font-weight: 500;
@@ -347,6 +352,12 @@ body {
 }
 .unit__info--black-text {
   color: #363636;
+}
+.unit__info--white-text {
+  color: #fff;
+}
+.unit__info--uppercase {
+  text-transform: uppercase;
 }
 .unit__info-wrap {
   display: block;
@@ -765,10 +776,22 @@ body {
   margin-bottom: 14px;
   background: url("../img/play-circle.png") no-repeat center;
 }
+.icon--theme-circle-bg {
+  position: relative;
+  width: 61px;
+  height: 61px;
+  margin: auto;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background-color: #2297d8;
+}
 .icon--theme-play-arrow {
+  position: absolute;
+  top: 17px;
+  left: 22px;
   width: 22px;
   height: 28px;
-  margin-left: 28px;
   background: url("../img/play-arrow.png") no-repeat center;
 }
 .icon--theme-pdf {
