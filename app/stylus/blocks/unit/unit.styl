@@ -114,27 +114,7 @@
   //    margin-bottom  1em
 
   //Элемент горизонтальной линии
-  &__horizontal
-    width 34px
-    margin-left 0
-
-    &--black-solid
-      border solid #363636
-
-    &--white-solid
-      border solid #ffffff
-
-    &--width-small
-      width 21px
-
-    &--opasity-half
-      opacity .5
-
-    &--inline
-      display inline-block
-      margin-right 15px
-      &:last-child
-        margin-right 0
+  @import "__horizontal/__horizontal.styl"
 
   //Элемент для информации
   @import "__info/__info.styl"
@@ -219,6 +199,11 @@
   &__person-info-wrap
     text-align center
 
+  &__person-rate-inline-wrap
+    margin-top 10px
+    font-size 0
+    text-align center
+
   &__horiz-inline-center-wrap
     font-size 0
     text-align center
@@ -257,28 +242,6 @@
 
   //Элемент article
   @import "__article/__article.styl"
-  //&__article
-  //  font-size 14px
-  //  &--theme-unit-black-text
-  //    font-weight 600
-  //    line-height 22px
-  //    font-family Montserrat, sans-serif;
-  //    color #363636
-  //
-  //  &--gray-text
-  //    color #a0a0a0
-  //
-  //  &--grey-yellow-text
-  //    color #777463
-  //
-  //  &--text-width419
-  //    width 419px
-  //
-  //  &--centered-text
-  //    text-align center
-  //
-  //  &--text-ind
-  //    text-indent .5em
 
   //Элемент подпись иконки
   &__icon-caption
@@ -312,19 +275,4 @@
   @import "__arrow/__arrow.styl"
 
   //Элемент номер
-  &__number
-    width 71px
-    padding-top 20px
-    padding-bottom 18px
-
-    &--theme-yellow-bg
-      background-color #ffe400
-
-    &--text
-      font-size 27px
-      font-weight 500
-      font-family Montserrat, sans-serif;
-      color #363636
-
-    &--centered-text
-      text-align center
+  @import "__number/__number.styl"
