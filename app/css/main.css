@@ -485,6 +485,13 @@ body {
   font-size: 0;
   text-align: center;
 }
+.unit__horiz-inline-center-bottom-wrap {
+  position: absolute;
+  bottom: 28px;
+  width: inherit;
+  font-size: 0;
+  text-align: center;
+}
 .unit__horiz-inline-wrap {
   font-size: 0;
 }
@@ -526,6 +533,9 @@ body {
 }
 .unit__article--centered-text {
   text-align: center;
+}
+.unit__article--margin-top10 {
+  margin-top: 10px;
 }
 .unit__article--fix-for-your-buildig-is {
   margin-top: 17px;
