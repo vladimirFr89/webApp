@@ -175,12 +175,12 @@ body {
 .caption__text {
   display: block;
   position: relative;
-  top: 20px;
+  top: 19px;
   left: 28px;
   color: #363636;
   font-family: Montserrat, sans-serif;
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
 }
 /*====================Блок Тело сайта=========================*/
@@ -360,6 +360,9 @@ body {
 .unit__title--fix-for-contemporary-vila {
   margin-top: -6px;
 }
+.unit__title--fix-for-popular-posts {
+  margin-bottom: 24px;
+}
 .unit__horizontal {
   width: 34px;
   margin-left: 0;
@@ -430,6 +433,10 @@ body {
 .unit__info--fix-for-news {
   margin-top: 30px;
   margin-bottom: 6px;
+}
+.unit__info--fix-for-popular-posts {
+  margin-top: 19px;
+  margin-bottom: -13px;
 }
 .unit__info-wrap {
   display: block;
@@ -550,7 +557,7 @@ body {
   border-left: 12px solid #fff;
 }
 .unit__arrow--down {
-  left: 130px;
+  left: 134px;
   bottom: -24px;
   z-index: 10;
   border-top: 12px solid #fff;
@@ -570,7 +577,7 @@ body {
 }
 .unit__number--text {
   font-size: 27px;
-  font-weight: 700;
+  font-weight: 500;
   font-family: Montserrat, sans-serif;
   color: #363636;
 }
