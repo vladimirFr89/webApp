@@ -328,6 +328,16 @@ body {
   margin-top: -3px;
   margin-bottom: 15px;
 }
+.unit__title--med-width-h3-155 {
+  width: 155px;
+  margin-top: -3px;
+  margin-bottom: 15px;
+}
+.unit__title--med-width-h3-136 {
+  width: 136px;
+  margin-top: -1px;
+  margin-bottom: 15px;
+}
 .unit__title--black-text {
   color: #363636;
 }
@@ -812,6 +822,10 @@ body {
 }
 .footer__container--menu-items-space {
   margin-right: 30px;
+}
+.footer__container--fix-inner-our-service-page {
+  position: relative;
+  top: 29px;
 }
 /*===============================Блок кнопка============================*/
 .button {
