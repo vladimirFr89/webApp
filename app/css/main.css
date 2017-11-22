@@ -295,6 +295,11 @@ body {
 .unit__title {
   font-size: 14px;
 }
+.unit__title--med-regular {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Montserrat, sans-serif;
+}
 .unit__title--med-bold {
   width: 155px;
   font-size: 18px;
@@ -337,6 +342,10 @@ body {
 }
 .unit__title--fix-big-width {
   margin-top: -2px;
+}
+.unit__title--fix-for-news {
+  margin-top: 0;
+  margin-bottom: 23px;
 }
 .unit__horizontal {
   width: 34px;
@@ -404,6 +413,10 @@ body {
 }
 .unit__info--uppercase {
   text-transform: uppercase;
+}
+.unit__info--fix-for-news {
+  margin-top: 30px;
+  margin-bottom: 6px;
 }
 .unit__info-wrap {
   display: block;
@@ -840,7 +853,6 @@ body {
 }
 .button--fix-btn-about-company {
   padding: 15px 26px 16px 23px;
-  font-weight: 500;
 }
 /*===============================Блок иконка============================*/
 .icon {
