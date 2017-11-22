@@ -773,7 +773,7 @@ body {
   color: #9b9b9b;
   font-family: Montserrat, sans-serif;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .footer_theme-text-mark {
   color: #2297d8;
@@ -782,7 +782,7 @@ body {
   color: #a2a2a2;
   font-family: Montserrat, sans-serif;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .footer__content {
   width: 1172px;
@@ -797,7 +797,7 @@ body {
 }
 .footer__container__container-inner {
   position: relative;
-  top: 33px;
+  top: 32px;
 }
 .footer__container__text-inner {
   display: inline-block;
@@ -809,6 +809,9 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+.footer__container--menu-items-space {
+  margin-right: 30px;
 }
 /*===============================Блок кнопка============================*/
 .button {
