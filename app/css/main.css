@@ -438,6 +438,7 @@ body {
 .unit__info--supper {
   position: relative;
   bottom: 23%;
+  left: 1px;
 }
 .unit__info--condensed-letter {
   font-stretch: condensed;
