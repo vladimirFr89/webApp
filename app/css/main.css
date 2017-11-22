@@ -347,6 +347,9 @@ body {
   margin-top: 0;
   margin-bottom: 23px;
 }
+.unit__title--fix-for-contemporary-vila {
+  margin-top: -6px;
+}
 .unit__horizontal {
   width: 34px;
   margin-left: 0;
@@ -493,6 +496,10 @@ body {
   margin-top: 17px;
   margin-bottom: 21px;
   width: 420px;
+}
+.unit__article--fix-for-contemporary-vila {
+  margin-left: 1px;
+  margin-bottom: 22px;
 }
 .unit__icon-caption {
   display: block;
@@ -853,6 +860,9 @@ body {
 }
 .button--fix-btn-about-company {
   padding: 15px 26px 16px 23px;
+}
+.button--fix-btn-view-project {
+  padding: 15px 21px 16px 23px;
 }
 /*===============================Блок иконка============================*/
 .icon {
