@@ -335,6 +335,9 @@ body {
 .unit__title--uppercase-disabled {
   text-transform: none;
 }
+.unit__title--fix-big-width {
+  margin-top: -2px;
+}
 .unit__horizontal {
   width: 34px;
   margin-left: 0;
@@ -472,6 +475,11 @@ body {
 }
 .unit__article--centered-text {
   text-align: center;
+}
+.unit__article--fix-for-your-buildig-is {
+  margin-top: 17px;
+  margin-bottom: 21px;
+  width: 420px;
 }
 .unit__icon-caption {
   display: block;
@@ -829,6 +837,10 @@ body {
   padding-left: 0;
   padding-right: 5px;
   background: url("../img/arr-prev-hover.png") no-repeat center;
+}
+.button--fix-btn-about-company {
+  padding: 15px 26px 16px 23px;
+  font-weight: 500;
 }
 /*===============================Блок иконка============================*/
 .icon {
