@@ -482,7 +482,7 @@ body {
   text-align: center;
 }
 .unit__person-rate-inline-wrap {
-  margin-top: 10px;
+  margin-top: 11px;
   font-size: 0;
   text-align: center;
 }
@@ -825,14 +825,14 @@ body {
   font-size: 12px;
   font-weight: 600;
 }
-.footer_theme-text-mark {
-  color: #2297d8;
-}
 .footer_theme-text-menu {
   color: #a2a2a2;
   font-family: Montserrat, sans-serif;
   font-size: 12px;
   font-weight: 600;
+}
+.footer_theme-text-mark {
+  color: #2297d8;
 }
 .footer__content {
   width: 1172px;
@@ -948,7 +948,7 @@ body {
 .icon--theme-play-arrow {
   position: absolute;
   top: 17px;
-  left: 22px;
+  left: 23px;
   width: 22px;
   height: 28px;
   background: url("../img/play-arrow.png") no-repeat center;
