@@ -352,6 +352,7 @@ body {
 }
 .unit__title--fix-big-width {
   margin-top: -2px;
+  margin-bottom: 12px;
 }
 .unit__title--fix-for-news {
   margin-top: 0;
@@ -364,20 +365,25 @@ body {
   margin-bottom: 24px;
 }
 .unit__horizontal {
-  width: 34px;
+  width: 30px;
   margin-left: 0;
 }
 .unit__horizontal--black-solid {
-  border: solid #363636;
+  border: 5px solid #363636;
+  border-bottom: transparent;
 }
 .unit__horizontal--white-solid {
-  border: solid #fff;
+  border: 5px solid #fff;
+  border-top: transparent;
 }
 .unit__horizontal--width-small {
-  width: 21px;
+  width: 17px;
 }
 .unit__horizontal--opasity-half {
   opacity: 0.5;
+}
+.unit__horizontal--opasity02 {
+  opacity: 0.2;
 }
 .unit__horizontal--inline {
   display: inline-block;
@@ -522,7 +528,8 @@ body {
 }
 .unit__horiz-inline-center-bottom-wrap {
   position: absolute;
-  bottom: 28px;
+  bottom: 29px;
+  left: 29px;
   width: inherit;
   font-size: 0;
   text-align: center;
@@ -573,8 +580,8 @@ body {
   margin-top: 10px;
 }
 .unit__article--fix-for-your-buildig-is {
-  margin-top: 17px;
-  margin-bottom: 21px;
+  margin-top: 15px;
+  margin-bottom: 22px;
   width: 420px;
 }
 .unit__article--fix-for-contemporary-vila {
