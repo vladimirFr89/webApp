@@ -25,6 +25,19 @@ body {
 .header__bg--part-right {
   margin-left: 50%;
 }
+.header__bg--theme-head-banner {
+  width: 879px;
+  height: 826px;
+  background: url("../img/header-home-920px.jpg") no-repeat -334px;
+  background-size: auto 100%;
+}
+.header__bg--theme-head-banner-left-part {
+  width: 920px;
+  height: 826px;
+  margin-left: auto;
+  background: url("../img/header-home-920px.jpg") no-repeat;
+  background-size: auto 100%;
+}
 .header__content {
   width: 1172px;
 }
@@ -658,6 +671,38 @@ body {
 }
 .unit__number--centered-text {
   text-align: center;
+}
+.unit__picture--theme-contr {
+  width: 293px;
+  height: 293px;
+  background: url("../img/contr.jpg") no-repeat center;
+}
+.unit__picture--theme-desing {
+  width: 293px;
+  height: 293px;
+  background: url("../img/desing.jpg") no-repeat left center;
+}
+.unit__picture--theme-capital {
+  width: 293px;
+  height: 293px;
+  background: url("../img/capital.jpg") no-repeat right;
+}
+.unit__picture--theme-what {
+  height: 293px;
+  background: url("../img/what.jpg") no-repeat 100% 20%;
+}
+.unit__picture--theme-good-hands {
+  position: absolute;
+  width: 586px;
+  height: 293px;
+  background: url("../img/good-hands.jpg") no-repeat;
+  background-size: 100% auto;
+}
+.unit__picture--theme-rest {
+  position: absolute;
+  width: 586px;
+  height: 586px;
+  background: url("../img/rest.jpg") no-repeat center;
 }
 /*.unit
   width 233px
