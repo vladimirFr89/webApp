@@ -392,6 +392,7 @@ body {
 .unit__info--block41 {
   display: block;
   height: 41px;
+  margin-left: -3px;
 }
 .unit__info--small-medium {
   font-size: 12px;
@@ -441,7 +442,12 @@ body {
   left: 1px;
 }
 .unit__info--condensed-letter {
-  font-stretch: condensed;
+  display: inline-block;
+  transform: scaleX(0.8);
+}
+.unit__info--space {
+  display: inline-block;
+  width: 12px;
 }
 .unit__info--black-text {
   color: #363636;
