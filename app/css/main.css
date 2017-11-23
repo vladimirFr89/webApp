@@ -38,6 +38,9 @@ body {
 .header__content-bg_theme-gray {
   background-color: #d6d6d6;
 }
+.header__content-bg__theme-transparent {
+  background-color: transparent;
+}
 .header__content-bg--height-home-page {
   min-height: 826px;
 }
