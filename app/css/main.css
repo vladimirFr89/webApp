@@ -17,7 +17,7 @@ body {
   background-color: #d6d6d6;
 }
 .header__bg--theme-dark-grey {
-  background-color: #36383b;
+  background-color: #252628;
 }
 .header__bg--height-home-page {
   min-height: 826px;
@@ -287,7 +287,7 @@ body {
   background-color: #fcf3d3;
 }
 .unit--dark-grey {
-  background-color: #36383b;
+  background-color: #252628;
 }
 .unit--transparent {
   background-color: transparent;
