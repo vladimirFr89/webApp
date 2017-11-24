@@ -469,6 +469,13 @@ body {
   display: inline-block;
   transform: scaleX(0.8);
 }
+.unit__info--rotated-slesh {
+  display: inline-block;
+  transform: rotateZ(6deg);
+}
+.unit__info--left-right-margin5 {
+  margin: 0 5px;
+}
 .unit__info--space {
   display: inline-block;
   width: 12px;
