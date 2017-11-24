@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Montserrat-reg;
+  font-style: normal;
+  src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: Montserrat-bold;
+  font-style: normal;
+  src: url("../fonts/montserrat/Montserrat-Bold.ttf");
+}
 body {
   margin: 0;
 }
@@ -428,6 +438,14 @@ body {
   font-weight: 600;
   font-family: Montserrat, sans-serif;
 }
+.unit__info--norm-regular {
+  font-size: 14px;
+  font-family: Montserrat-reg, sans-serif;
+}
+.unit__info--norm-bold {
+  font-size: 14px;
+  font-family: Montserrat-bold, sans-serif;
+}
 .unit__info--medium {
   font-size: 22px;
   font-weight: 500;
@@ -443,10 +461,17 @@ body {
   font-weight: 500;
   font-family: Montserrat, sans-serif;
 }
+.unit__info--big-regular {
+  font-size: 36px;
+  font-family: Montserrat-reg, sans-serif;
+}
 .unit__info--biggest-medium {
   font-size: 38px;
   font-weight: 500;
   font-family: Montserrat, sans-serif;
+}
+.unit__info--letter-spacing03 {
+  letter-spacing: 0.3px;
 }
 .unit__info--letter-spacing1 {
   letter-spacing: 1px;
