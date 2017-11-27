@@ -1,0 +1,29 @@
+header.header
+    // Фон для шапки сайта
+    div.header__bg.header__bg-inner.header__bg_theme-gray
+    // Контент для шапки
+    div.header__content.header__content-inner
+        //Фон в контенте шапки
+        div.header__content-bg.header__content-bg-inner.header__content-bg_theme-gray
+        //Контейнер в контенте шапки для содержимого типа лого, меню и т.д
+        div.header__container.header__content-container-inner
+            // Блок для Лого
+            div.logo
+                a.logo__text.logo__text-inner(href="#") fdn
+            //Блок для меню
+            div.menu.content__menu
+                ul.menu__items
+                    li.menu__item.menu__item_facebook-theme
+                        i(class="fa fa-facebook", aria-hidden="true")
+                    li.menu__item.menu__item_twitter-theme
+                        i(class="fa fa-twitter", aria-hidden="true")
+                    li.menu__item.menu__item_icon-theme
+                        div.menu__item-layer
+                            img(src="../img/forma-1.png", alt="корзина")
+                            div.menu__icon-super.menu__icon-super_theme-sq-yellow
+                                span.menu__icon-super_theme-text 99
+                    li.menu__item.menu__item_icon-theme
+                        img(src="../img/menu.png", alt="меню")
+            // Название страницы
+            div.caption.content__caption
+                span.caption__text our services

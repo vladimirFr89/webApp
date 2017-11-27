@@ -1,0 +1,190 @@
+.unit
+  position relative
+  width 233px
+  height 233px
+  padding 30px
+
+  //Блок вытянутый по горизонтали в два раза
+  &--horizontal-double-unit
+    width 526px
+
+  //Блок вытянутый по вертикали в два раза
+  &--vertical-double-unit
+    height 526px
+
+  //Большой 586*586
+  &--big-bg-layer-unit
+    position relative
+    width 586px
+    height 586px
+    padding 0
+
+  //Вертикальный 293*586
+  &--vertical-double-bg-layer-unit
+    position relative
+    width 293px
+    height 586px
+    padding 0
+
+  //Размещать блоки в ряды
+  &--inline
+    display inline-block
+
+  //Слой для unit на котором можно поместить уникальный фон/фото
+  &--bg-layer-unit
+    position relative
+    height auto
+    width auto
+    padding 0
+
+  //Уникальный слой для unit для размещения фонового изображения
+  &--bg-unit-width959
+    position absolute
+    height 293px
+    width 959px
+    padding 0
+
+  //Блок в котором будет размещаться текст на белом фоне
+  &--theme-info
+    background-color #ffffff
+
+  //Блок для размещения фото
+  &--theme-foto
+    background-color #d6d6d6
+
+  &--theme-yellow
+    background-color #ffe400
+
+  &--theme-blue
+    background-color #2297d8
+
+  &--white
+    background-color #ffffff
+
+  &--soft-gold
+    background-color #fcf3d3
+
+  &--dark-grey
+    //background-color #36383b
+    background-color #252628
+
+  &--transparent
+    background-color transparent
+
+  //Элемент заголовок
+  @import "__title/__title.styl"
+
+  //Элемент горизонтальной линии
+  @import "__horizontal/__horizontal.styl"
+
+  //Элемент для информации
+  @import "__info/__info.styl"
+
+  //Элемент info-wrap
+  &__info-wrap
+    position relative
+    display block
+    height 44px
+    margin 24px 0 18px
+    text-align center
+
+  &__company-video-wrap
+    width 120px
+    margin 70px auto
+    text-align center
+
+  &__download-price-wrap
+    margin-top 70px
+    text-align center
+
+  &__contact-us-wrap
+    margin-top 70px
+    text-align center
+
+  &__form-search-wrap
+    margin-top 100px
+
+  &__person-info-wrap
+    text-align center
+
+  &__person-rate-inline-wrap
+    margin-top 11px
+    font-size 0
+    text-align center
+
+  &__horiz-inline-center-wrap
+    font-size 0
+    text-align center
+
+  &__horiz-inline-center-bottom-wrap
+    position absolute
+    bottom 29px
+    left 29px
+    width inherit
+    font-size 0
+    text-align center
+
+  &__horiz-inline-wrap
+    font-size 0
+
+  &__horiz-bottom-wrap
+    position absolute
+    bottom 30px
+
+  &__bottom-right-unit-wrap
+    position absolute
+    bottom 0
+    right 0
+
+  &__fix-button-view-project-wrap
+    position absolute
+    bottom 48px
+
+  &__fix-btn-read-more-wrap
+    position absolute
+    bottom 58px
+
+  //Размещение формы в unit aside
+  &__inner-form-aside
+    position relative
+    bottom -54px
+
+  //Элемент article
+  @import "__article/__article.styl"
+
+  //Элемент подпись иконки
+  &__icon-caption
+    display block
+    position relative
+    top 160px
+    text-align center
+
+  //Элемент кнопка по центру по горизонтали
+  &__button-center
+    display block
+    margin 16px auto
+
+  //Элемент кнопка в левом нижнем углу
+  &__button-buttom-left
+    position relative
+    top 21px
+
+  //Элемент кнопка в левой части под очередным блоком
+  &__button-left
+    margin-top 10px;
+
+  //Элемент кнопка со стрелкой
+  &__button-arrow-wrap
+    padding 18px 106px
+
+  &__fix-padding-unit-with-arrow-hower
+    height 4px
+
+  //Элемент стрелки
+  @import "__arrow/__arrow.styl"
+
+  //Элемент номер
+  @import "__number/__number.styl"
+
+  //Элемент изображение
+  @import "__picture/__picture.styl"
