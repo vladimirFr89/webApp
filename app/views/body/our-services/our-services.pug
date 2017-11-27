@@ -3,33 +3,67 @@ div.main.main--theme-white-gr
     div.main__content.main__content--theme-grey.main__content-inner
         //Колонка для всего остального
         aside.main__column-aside.main__column-inner-right
-            div.unit.unit--theme-blue
-                h2.unit__title.unit__title--big-bold.unit__title--med-width.unit__title--letter-spacing1.unit__title--white-text popular posts
-                p.unit__info.unit__info--norm-medium.unit__info--white-blue-text.unit__info--fix-for-popular-posts 12 february, 2015
-                h3.unit__title.unit__title--med-regular.unit__title--white-text.unit__title--fix-for-popular-posts Project Design and Engineering Services
-                p.unit__info.unit__info--norm-medium.unit__info--white-blue-text 23 comments
-                div.unit__horiz-inline-wrap.unit__horiz-bottom-wrap
-                    hr.unit__horizontal.unit__horizontal--white-solid.unit__horizontal--width-small.unit__horizontal--inline
-                    hr.unit__horizontal.unit__horizontal--white-solid.unit__horizontal--width-small.unit__horizontal--opasity02.unit__horizontal--inline
-                    hr.unit__horizontal.unit__horizontal--white-solid.unit__horizontal--width-small.unit__horizontal--opasity02.unit__horizontal--inline
+            -
+                var blocks = [
+                    {
+                        title: "popular posts",
+                        dateInfo: "12 february, 2015",
+                        subTitle: "Project Design and Engineering Services",
+                        commentsInfo: "23 comments"
+                    },
+                    {
+                        title: "Download price",
+                        icon: "icon--theme-pdf",
+                        type: "bigIcon"
+                    },
+                    {
+                        title: "subscribe",
+                        inputValue: "E-mail",
+                        btnCaption: "sign up",
+                        type: "subscribe"
+                    },
+                    {
+                        title: "Work with us",
+                        icon: "icon--icon-stars",
+                        type: "bigIcon"
+                    }
+                ];
 
-            div.unit.unit--theme-yellow
-                div.unit__download-price-wrap
-                    div.icon.icon--theme-pdf
-                    span.unit__info.unit__info--small-regular.unit__info--letter-spacing03.unit__info--black-text.unit__info--uppercase Download price
+            mixin blockNews(obj)
+                div.unit.unit--theme-blue
+                    h2.unit__title.unit__title--big-bold.unit__title--med-width.unit__title--letter-spacing1.unit__title--white-text= obj.title
+                    p.unit__info.unit__info--norm-medium.unit__info--white-blue-text.unit__info--fix-for-popular-posts= obj.dateInfo
+                    h3.unit__title.unit__title--med-regular.unit__title--white-text.unit__title--fix-for-popular-posts= obj.subTitle
+                    p.unit__info.unit__info--norm-medium.unit__info--white-blue-text= obj.commentsInfo
+                    div.unit__horiz-inline-wrap.unit__horiz-bottom-wrap
+                        hr.unit__horizontal.unit__horizontal--white-solid.unit__horizontal--width-small.unit__horizontal--inline
+                        hr.unit__horizontal.unit__horizontal--white-solid.unit__horizontal--width-small.unit__horizontal--opasity02.unit__horizontal--inline
+                        hr.unit__horizontal.unit__horizontal--white-solid.unit__horizontal--width-small.unit__horizontal--opasity02.unit__horizontal--inline
 
-            div.unit.unit--theme-blue
-                h2.unit__title.unit__title--big-bold.unit__title--med-width.unit__title--letter-spacing1.unit__title--white-text subscribe
-                hr.unit__horizontal.unit__horizontal--white-solid
-                div.unit__inner-form-aside
-                    form.form
-                        input.form__input.form__input--theme-unit-search-white(type="text", name="email", value="E-mail")
-                        input.form__submit.form__submit--theme-link-submit.form__submit--small-text.form__submit--white-text(type="submit", value="sign up")
+            mixin blockIcon(obj)
+                div.unit.unit--theme-yellow
+                    div.unit__download-price-wrap
+                        div(class="icon " + obj.icon)
+                        span.unit__info.unit__info--small-regular.unit__info--letter-spacing03.unit__info--black-text.unit__info--uppercase= obj.title
 
-            div.unit.unit--theme-yellow
-                div.unit__download-price-wrap
-                    div.icon.icon--icon-stars
-                    span.unit__info.unit__info--small-regular.unit__info--letter-spacing03.unit__info--black-text.unit__info--uppercase Work with us
+            mixin blockSubscribe(obj)
+                div.unit.unit--theme-blue
+                    h2.unit__title.unit__title--big-bold.unit__title--med-width.unit__title--letter-spacing1.unit__title--white-text= obj.title
+                    hr.unit__horizontal.unit__horizontal--white-solid
+                    div.unit__inner-form-aside
+                        form.form
+                            input.form__input.form__input--theme-unit-search-white(type="text", name="email", value= obj.inputValue)
+                            input.form__submit.form__submit--theme-link-submit.form__submit--small-text.form__submit--white-text(type="submit", value= obj.btnCaption)
+
+            for block in blocks
+                if (block.type === "bigIcon")
+                    +blockIcon(block)
+
+                else if (block.type === "subscribe")
+                    +blockSubscribe(block)
+
+                else
+                    +blockNews(block)
 
         //Колонка для главного содержимого сайта
         main.main__column-main.main__column-main--theme-inline.main__column-inner-left
