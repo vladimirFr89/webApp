@@ -1,0 +1,10 @@
+mixin unitSearchWithBg(obj)
+    .unit(class=obj.unitLayer)
+        .unit(class=obj.unitLayerFoto)
+            div(class=obj.unitFoto)
+        .unit(class=obj.unitGeometry)
+            div(class=obj.locationStyles)
+                form.form
+                    input.form__input(class=obj.inputStyles)(type="text", name="search-text", value= obj.inputSearchValue)
+                    button.form__button(class=obj.buttonStyles)
+                        i.form__button-icon(class="fa fa-search", aria-hidden="true")
