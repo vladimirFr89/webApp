@@ -1,0 +1,12 @@
+mixin unitWithArrow(obj)
+    .unit(class=obj.unitLayer)
+        .unit(class=obj.bgColor)
+            if obj.title.length
+                h3.unit__title(class=obj.titleStyles)= obj.title
+
+            if obj.hrLine
+                hr.unit__horizontal.unit__horizontal--black-solid
+
+            if obj.article.length
+                p.unit__article(class=obj.articleStyles)= obj.article
+        .unit__arrow(class=obj.arrowStyle)
