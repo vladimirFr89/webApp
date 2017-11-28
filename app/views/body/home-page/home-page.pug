@@ -8,10 +8,13 @@ div.main.main--theme-white-gr
             //Миксины для блока
             include mixins/unit
             include mixins/unitScrollingButtons
+            include mixins/unitIconButton
 
             for unitItem in unitsListData
                 if unitItem.unitType === "twoBtnScroll"
                     +unitScrollingButtons(unitItem)
+                else if unitItem.unitType === "iconButton"
+                    +unitIconButton(unitItem)
                 else
                     +unit(unitItem)
 
@@ -37,17 +40,17 @@ div.main.main--theme-white-gr
             //        button.button.button--theme-arrow.button--arrow-prev
             //            div.icon.icon--arrow-prev-inside
 
-            div.unit
+            //div.unit
 
-            div.unit
+            //div.unit
 
-            div.unit.unit--theme-company-video.unit--theme-blue
-                div.unit__company-video-wrap
-                    button.icon.icon--theme-circle.icon--blue-bg
-                        div.icon.icon--theme-circle-bg
-                            div.icon.icon--theme-play-arrow
-
-                    span.unit__info.unit__info--small-regular.unit__info--letter-spacing03.unit__info--white-text.unit__info--uppercase Company video
+            //div.unit.unit--theme-company-video.unit--theme-blue
+            //    div.unit__company-video-wrap
+            //        button.icon.icon--theme-circle.icon--blue-bg
+            //            div.icon.icon--theme-circle-bg
+            //                div.icon.icon--theme-play-arrow
+            //
+            //        span.unit__info.unit__info--small-regular.unit__info--letter-spacing03.unit__info--white-text.unit__info--uppercase Company video
 
             div.unit
 
