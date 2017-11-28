@@ -13,6 +13,7 @@ div.main.main--theme-white-gr
             include mixins/unitWithArrow
             include mixins/unitIcon
             include mixins/unitSearchWithBg
+            include mixins/unitPersonPost
 
             for unitItem in unitsListData
                 if unitItem.unitType === "twoBtnScroll"
@@ -27,6 +28,8 @@ div.main.main--theme-white-gr
                     +unitIcon(unitItem)
                 else if unitItem.unitType === "searchWithBg"
                     +unitSearchWithBg(unitItem)
+                else if unitItem.unitType === "personPost"
+                    +unitPersonPost(unitItem)
                 else
                     +unit(unitItem)
 
@@ -139,15 +142,15 @@ div.main.main--theme-white-gr
             //                button.form__button.form__button--right-button.form__button--theme-search-button
             //                    i.form__button-icon(class="fa fa-search", aria-hidden="true")
 
-            div.unit.unit--horizontal-double-unit.unit--white
-                div.unit__person-info-wrap
-                    div.icon.icon--person-avatar
-                    span.unit__info.unit__info--norm-bold.unit__info--black-text Martin H. Jhonsons
-                    div.unit__person-rate-inline-wrap
-                        div.icon.icon--person-rate4
-                        div.icon.icon--person-rate1none
-
-                p.unit__article.unit__article--centered-text.unit__article--gray-text Together, we'll couple our knowledge, expertise, and innovative capabilities with your astute knowledge of your business—to maximize and optimize results. This is all accomplished in a number of ways.
+            //div.unit.unit--horizontal-double-unit.unit--white
+            //    div.unit__person-info-wrap
+            //        div.icon.icon--person-avatar
+            //        span.unit__info.unit__info--norm-bold.unit__info--black-text Martin H. Jhonsons
+            //        div.unit__person-rate-inline-wrap
+            //            div.icon.icon--person-rate4
+            //            div.icon.icon--person-rate1none
+            //
+            //    p.unit__article.unit__article--centered-text.unit__article--gray-text Together, we'll couple our knowledge, expertise, and innovative capabilities with your astute knowledge of your business—to maximize and optimize results. This is all accomplished in a number of ways.
 
             div.unit.unit--bg-layer-unit
                 div.unit__picture--theme-good-hands
