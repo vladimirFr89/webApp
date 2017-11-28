@@ -1,0 +1,13 @@
+mixin unitScrollingButtons(obj)
+    .unit(class=obj.bgColor)
+        div.unit__button-arrow-wrap
+            button.button.button--theme-arrow.button--arrow-next
+                div.icon.icon--arrow-next-inside
+
+        div.unit__info-wrap
+            span.unit__info.unit__info--big-regular.unit__info--letter-spacing4.unit__info--black-text= obj.mainInfoValue
+            span.unit__info.unit__info--supper.unit__info--medium-regular.unit__info--letter-spacing2.unit__info--black-text= obj.supInfoValue
+
+        div.unit__button-arrow-wrap
+            button.button.button--theme-arrow.button--arrow-prev
+                div.icon.icon--arrow-prev-inside
