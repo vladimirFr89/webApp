@@ -1,13 +1,17 @@
 mixin unitScrollingButtons(obj)
     .unit(class=obj.bgColor)
+        if obj.fixPaddingTop && obj.fixPaddingTop.length
+            div(class=obj.fixPaddingTop)
         div.unit__button-arrow-wrap
-            button.button.button--theme-arrow.button--arrow-next
-                div.icon.icon--arrow-next-inside
+            button.button(class=obj.btnNextLayer0)
+                div.icon(class=obj.btnNextLayer1)
 
         div.unit__info-wrap
-            span.unit__info.unit__info--big-regular.unit__info--letter-spacing4.unit__info--black-text= obj.mainInfoValue
-            span.unit__info.unit__info--supper.unit__info--medium-regular.unit__info--letter-spacing2.unit__info--black-text= obj.supInfoValue
+            span.unit__info(class=obj.mainInfoStyles)= obj.mainInfoValue
+            if obj.supInfoSlash.length
+                span.unit__info(class=obj.slashStyles)= obj.supInfoSlash
+            span.unit__info(class=obj.supInfoStyles)= obj.supInfoValue
 
         div.unit__button-arrow-wrap
-            button.button.button--theme-arrow.button--arrow-prev
-                div.icon.icon--arrow-prev-inside
+            button.button(class=obj.btnPrevLayer0)
+                div.icon(class=obj.btnPrevLayer1)
