@@ -1,0 +1,19 @@
+mixin unit(obj)
+    .unit(class=[obj.unitGeometry, obj.bgColor])
+
+        if obj.title.length
+            h2.unit__title(class=obj.titleStyles)= obj.title
+
+        if obj.hrLine
+            hr.unit__horizontal.unit__horizontal--black-solid
+
+        if obj.article.length
+            p.unit__article(class=obj.articleStyles)= obj.article
+
+        if obj.buttons.length
+            for btn in obj.buttons
+                if btn.locationStyles.length
+                    div(class=btn.locationStyles)
+                        input.button&attributes({"class": btn.btnStyles})(type="button", value= btn.caption)
+                else
+                    input.button&attributes({"class": btn.btnStyles})(type="button", value= btn.caption)
