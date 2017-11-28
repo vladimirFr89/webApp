@@ -17,9 +17,9 @@ mixin unit(obj)
                     for btn in obj.buttons
                         if btn.locationStyles.length
                             div(class=btn.locationStyles)
-                                input.button(class=btn.btnStyles)(type="button", value= btn.caption)
+                                input.button(class=btn.btnStyles, type="button", value= btn.caption)
                         else
-                            input.button(class=btn.btnStyles)(type="button", value= btn.caption)
+                            input.button(class=btn.btnStyles, type="button", value= btn.caption)
     else
         .unit(class=[obj.unitGeometry, obj.bgColor])
 
@@ -36,6 +36,6 @@ mixin unit(obj)
                 for btn in obj.buttons
                     if btn.locationStyles.length
                         div(class=btn.locationStyles)
-                            input.button(class=btn.btnStyles)(type="button", value= btn.caption)
+                            input.button(class=btn.btnStyles, type="button", value= btn.caption)
                     else
-                        input.button(class=btn.btnStyles)(type="button", value= btn.caption)
+                        input.button(class=btn.btnStyles, type="button", value= btn.caption)
