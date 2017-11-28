@@ -9,12 +9,15 @@ div.main.main--theme-white-gr
             include mixins/unit
             include mixins/unitScrollingButtons
             include mixins/unitIconButton
+            include mixins/unitFoto
 
             for unitItem in unitsListData
                 if unitItem.unitType === "twoBtnScroll"
                     +unitScrollingButtons(unitItem)
                 else if unitItem.unitType === "iconButton"
                     +unitIconButton(unitItem)
+                else if unitItem.unitType === "foto"
+                    +unitFoto(unitItem)
                 else
                     +unit(unitItem)
 
@@ -60,8 +63,8 @@ div.main.main--theme-white-gr
             //    p.unit__article.unit__article--gray-text Our mission is to provide the highest level of service for our client-partners from concept through construction.
 
 
-            div.unit.unit--bg-layer-unit.unit--theme-foto
-                div.unit__picture--theme-contr
+            //div.unit.unit--bg-layer-unit.unit--theme-foto
+            //    div.unit__picture--theme-contr
 
             div.unit.unit--bg-layer-unit
                 div.unit.unit--theme-info
