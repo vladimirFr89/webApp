@@ -7,4 +7,8 @@ mixin unitPersonPost(obj)
                 if obj.personRate && obj.personRate.length
                     each rate in obj.personRate
                         div(class=rate)
-            p.unit__article(class=obj.articleStyles)= obj.article
+        p.unit__article(class=obj.articleStyles)= obj.article
+        div(class=obj.hrLinesLocationStyles)
+            if obj.hrLines && obj.hrLines.length
+                each line in obj.hrLines
+                    hr.unit__horizontal(class=line.lineStyles)
