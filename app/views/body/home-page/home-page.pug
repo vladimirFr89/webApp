@@ -17,6 +17,7 @@ div.main.main--theme-white-gr
             include mixins/unitIconStatistic
             include mixins/unitNews
             include mixins/unitDoubleArticle
+            include mixins/unitSubscribe
 
             for unitItem in unitsListData
                 if unitItem.unitType === "twoBtnScroll"
@@ -241,32 +242,111 @@ div.main.main--theme-white-gr
             div.unit.unit--big-bg-layer-unit.unit--theme-foto
                 div.unit__picture--theme-rest
                 div.unit__bottom-right-unit-wrap
-                    div.unit.unit--theme-info
-                        div.unit__fix-padding-unit-with-arrow-hower
-                        div.unit__button-arrow-wrap
-                            button.button.button--theme-arrow.button--arrow-next
-                                div.icon.icon--arrow-next-inside
+                    -
+                        var unitObj = {
 
-                        div.unit__info-wrap
-                            span.unit__info.unit__info--big-regular.unit__info--black-text.unit__info--fix-right-margin6 01
-                            span.unit__info.unit__info--supper.unit__info--medium-regular.unit__info--black-text.unit__info--left-right-margin5 /
-                            span.unit__info.unit__info--supper.unit__info--medium-regular.unit__info--black-text 09
+                            unitType: "twoBtnScroll",
 
-                        div.unit__button-arrow-wrap
-                            button.button.button--theme-arrow.button--arrow-prev
-                                div.icon.icon--arrow-prev-inside
+                            fixPaddingTop:["unit__fix-padding-unit-with-arrow-hower"],
+
+                            btnNextLayer0:[
+                                "button--theme-arrow",
+                                "button--arrow-next"
+                            ],
+                            btnNextLayer1:"icon--arrow-next-inside",
+
+                            mainInfoValue:"01",
+                            mainInfoStyles:[
+                                "unit__info--big-regular",
+                                "unit__info--fix-right-margin4",
+                                "unit__info--black-text",
+                                "unit__info--letter-spacing1"
+                            ],
+                            supInfoSlash:"/",
+                            slashStyles:[
+                                "unit__info--supper",
+                                "unit__info--medium-regular",
+                                "unit__info--black-text",
+                                "unit__info--left-right-margin5"
+                            ],
+                            supInfoValue:"09",
+                            supInfoStyles:[
+                                "unit__info--supper",
+                                "unit__info--medium-regular",
+                                "unit__info--black-text"
+                            ],
+
+                            btnPrevLayer0:[
+                                "button--theme-arrow",
+                                "button--arrow-prev"
+                            ],
+                            btnPrevLayer1:"icon--arrow-prev-inside",
+                            bgColor: "unit--theme-info"
+                        }
+
+                    +unitScrollingButtons(unitObj)
+                    //div.unit.unit--theme-info
+                    //    div.unit__fix-padding-unit-with-arrow-hower
+                    //    div.unit__button-arrow-wrap
+                    //        button.button.button--theme-arrow.button--arrow-next
+                    //            div.icon.icon--arrow-next-inside
+                    //
+                    //    div.unit__info-wrap
+                    //        span.unit__info.unit__info--big-regular.unit__info--black-text.unit__info--fix-right-margin6 01
+                    //        span.unit__info.unit__info--supper.unit__info--medium-regular.unit__info--black-text.unit__info--left-right-margin5 /
+                    //        span.unit__info.unit__info--supper.unit__info--medium-regular.unit__info--black-text 09
+                    //
+                    //    div.unit__button-arrow-wrap
+                    //        button.button.button--theme-arrow.button--arrow-prev
+                    //            div.icon.icon--arrow-prev-inside
 
             div.unit.unit--vertical-double-bg-layer-unit
-                div.unit.unit--theme-yellow
-                    div.unit__download-price-wrap
-                        div.icon.icon--icon-stars
-                        span.unit__info.unit__info--small-regular.unit__info--letter-spacing03.unit__info--black-text.unit__info--uppercase Work with us
+                -
+                    var unitIconObj = {
+                        unitType: "icon",
+                        icons:[
+                            {
+                                iconLayer0: "icon--icon-stars"
+                            }
+                        ],
+                        locationStyles:["unit__download-price-wrap"],
+                        infoValue: "Work with us",
+                        infoStyle: [
+                            "unit__info--small-regular",
+                            "unit__info--letter-spacing03",
+                            "unit__info--black-text",
+                            "unit__info--uppercase"
+                        ],
+                        bgColor: "unit--theme-yellow"
+                    }
+                +unitIcon(unitIconObj)
+                //div.unit.unit--theme-yellow
+                //    div.unit__download-price-wrap
+                //        div.icon.icon--icon-stars
+                //        span.unit__info.unit__info--small-regular.unit__info--letter-spacing03.unit__info--black-text.unit__info--uppercase Work with us
 
+                -
+                    var unitSubscribeObj = {
+                        unitType: "subscribe",
+                        unitTitle: "subscribe",
+                        hrLine: true,
+                        locationStyles:["unit__inner-form-aside"],
+                        inputSearchValue: "E-mail",
+                        inputStyles:["form__input--theme-unit-search-white"],
+                        buttonCaption: "sign up",
+                        buttonStyles: [
+                            "form__submit--theme-link-submit",
+                            "form__submit--small-text",
+                            "form__submit--white-text"
+                        ],
+                        bgColor:"unit--theme-blue"
+                    }
 
-                div.unit.unit--theme-blue
-                    h2.unit__title.unit__title--big-bold.unit__title--med-width.unit__title--letter-spacing018.unit__title--white-text subscribe
-                    hr.unit__horizontal.unit__horizontal--white-solid
-                    div.unit__inner-form-aside
-                        form.form
-                            input.form__input.form__input--theme-unit-search-white(type="text", name="email", value="E-mail")
-                            input.form__submit.form__submit--theme-link-submit.form__submit--small-text.form__submit--white-text(type="submit", value="sign up")
+                +unitSubscribe(unitSubscribeObj)
+                //div.unit.unit--theme-blue
+                //    h2.unit__title.unit__title--big-bold.unit__title--med-width.unit__title--letter-spacing018.unit__title--white-text subscribe
+                //    hr.unit__horizontal.unit__horizontal--white-solid
+                //    div.unit__inner-form-aside
+                //        form.form
+                //            input.form__input.form__input--theme-unit-search-white(type="text", name="email", value="E-mail")
+                //            input.form__submit.form__submit--theme-link-submit.form__submit--small-text.form__submit--white-text(type="submit", value="sign up")
