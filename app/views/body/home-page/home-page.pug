@@ -15,6 +15,7 @@ div.main.main--theme-white-gr
             include mixins/unitSearchWithBg
             include mixins/unitPersonPost
             include mixins/unitIconStatistic
+            include mixins/unitNews
 
             for unitItem in unitsListData
                 if unitItem.unitType === "twoBtnScroll"
@@ -33,6 +34,8 @@ div.main.main--theme-white-gr
                     +unitPersonPost(unitItem)
                 else if unitItem.unitType === "iconStatistic"
                     +unitIconStatistic(unitItem)
+                else if unitItem.unitType === "news"
+                    +unitNews(unitItem)
                 else
                     +unit(unitItem)
 
@@ -183,22 +186,22 @@ div.main.main--theme-white-gr
             //    span.unit__info.unit__info--block41.unit__info--big-regular.unit__info--letter-spacing2.unit__info--dark-grey-text 55 000
             //    span.unit__info.unit__info--block.unit__info--norm-regular.unit__info--letter-spacing03.unit__info--grey-text Expert Witness
 
-            div.unit.unit--theme-foto
-                div.icon.icon--blue-square
-                    div.icon.icon--blue-square-bg.icon--blue-square-bg--grey
-                        div.icon.icon--raindrop
-                span.unit__info.unit__info--block41.unit__info--big-regular.unit__info--letter-spacing2.unit__info--dark-grey-text 124 600
-                span.unit__info.unit__info--block.unit__info--norm-regular.unit__info--letter-spacing03.unit__info--grey-text Construction
+            //div.unit.unit--theme-foto
+            //    div.icon.icon--blue-square
+            //        div.icon.icon--blue-square-bg.icon--blue-square-bg--grey
+            //            div.icon.icon--raindrop
+            //    span.unit__info.unit__info--block41.unit__info--big-regular.unit__info--letter-spacing2.unit__info--dark-grey-text 124 600
+            //    span.unit__info.unit__info--block.unit__info--norm-regular.unit__info--letter-spacing03.unit__info--grey-text Construction
 
-            div.unit.unit--theme-blue
-                h2.unit__title.unit__title--big-bold.unit__title--med-width.unit__title--letter-spacing1.unit__title--white-text News
-                p.unit__info.unit__info--norm-medium.unit__info--white-blue-text.unit__info--fix-for-news 12 february, 2015
-                h3.unit__title.unit__title--med-regular.unit__title--white-text.unit__title--fix-for-news Project Design and Engineering Services
-                p.unit__info.unit__info--norm-medium.unit__info--white-blue-text 23 comments
-                div.unit__horiz-inline-wrap.unit__horiz-bottom-wrap
-                    hr.unit__horizontal.unit__horizontal--white-solid.unit__horizontal--width-small.unit__horizontal--inline
-                    hr.unit__horizontal.unit__horizontal--white-solid.unit__horizontal--width-small.unit__horizontal--opasity02.unit__horizontal--inline
-                    hr.unit__horizontal.unit__horizontal--white-solid.unit__horizontal--width-small.unit__horizontal--opasity02.unit__horizontal--inline
+            //div.unit.unit--theme-blue
+            //    h2.unit__title.unit__title--big-bold.unit__title--med-width.unit__title--letter-spacing1.unit__title--white-text News
+            //    p.unit__info.unit__info--norm-medium.unit__info--white-blue-text.unit__info--fix-for-news 12 february, 2015
+            //    h3.unit__title.unit__title--med-regular.unit__title--white-text.unit__title--fix-for-news Project Design and Engineering Services
+            //    p.unit__info.unit__info--norm-medium.unit__info--white-blue-text 23 comments
+            //    div.unit__horiz-inline-wrap.unit__horiz-bottom-wrap
+            //        hr.unit__horizontal.unit__horizontal--white-solid.unit__horizontal--width-small.unit__horizontal--inline
+            //        hr.unit__horizontal.unit__horizontal--white-solid.unit__horizontal--width-small.unit__horizontal--opasity02.unit__horizontal--inline
+            //        hr.unit__horizontal.unit__horizontal--white-solid.unit__horizontal--width-small.unit__horizontal--opasity02.unit__horizontal--inline
 
             div.unit.unit--white
                 div.unit__person-info-wrap
