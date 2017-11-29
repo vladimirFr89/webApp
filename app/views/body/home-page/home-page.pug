@@ -16,6 +16,7 @@ div.main.main--theme-white-gr
             include mixins/unitPersonPost
             include mixins/unitIconStatistic
             include mixins/unitNews
+            include mixins/unitDoubleArticle
 
             for unitItem in unitsListData
                 if unitItem.unitType === "twoBtnScroll"
@@ -36,6 +37,8 @@ div.main.main--theme-white-gr
                     +unitIconStatistic(unitItem)
                 else if unitItem.unitType === "news"
                     +unitNews(unitItem)
+                else if unitItem.unitType === "doubleArticle"
+                    +unitDoubleArticle(unitItem)
                 else
                     +unit(unitItem)
 
