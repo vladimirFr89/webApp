@@ -1,0 +1,11 @@
+mixin unitIconStatistic(obj)
+    .unit(class=obj.bgColor)
+        if obj.icons && obj.icons.length
+            each iconItem in obj.icons
+                .icon(class=iconItem.iconLayer0)
+                    if iconItem.iconLayer1
+                        .icon(class=iconItem.iconLayer1)
+                            if iconItem.iconLayer2
+                                .icon(class=iconItem.iconLayer2)
+        span.unit__info.unit__info--block41.unit__info--big-regular.unit__info--letter-spacing2.unit__info--dark-grey-text= obj.mainInfoValue
+        span.unit__info.unit__info--block.unit__info--norm-regular.unit__info--letter-spacing03.unit__info--grey-text= obj.subInfoValue
