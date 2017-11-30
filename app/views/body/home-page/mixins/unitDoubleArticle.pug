@@ -1,0 +1,16 @@
+mixin unitDoubleArticle(obj)
+    .unit(class=[obj.unitGeometry, obj.bgColor])
+        if obj.title
+            h2.unit__title(class=obj.titleStyles)= obj.title
+
+        if obj.hrLine
+            hr.unit__horizontal.unit__horizontal--black-solid
+
+        if obj.articles && obj.articles.length
+            each articleItem in obj.articles
+                p.unit__article(class=obj.articleStyles)= articleItem
+
+        if obj.buttons && obj.buttons.length
+            each btn in obj.buttons
+                div(class=btn.locationStyles)
+                    input.button(class=btn.btnStyles, type="button", value= btn.caption)

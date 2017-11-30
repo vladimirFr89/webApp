@@ -1,0 +1,10 @@
+mixin unitIcon(obj)
+    .unit(class=obj.bgColor)
+        div(class=obj.locationStyles)
+            if obj.icons && obj.icons.length
+                each iconItem in obj.icons
+                    .icon(class=iconItem.iconLayer0)
+                        if iconItem.iconLayer1
+                            .icon(class=iconItem.iconLayer1)
+
+            span.unit__info(class=obj.infoStyle)= obj.infoValue

@@ -1,0 +1,41 @@
+mixin unit(obj)
+    if obj.unitLayer
+        .unit(class=obj.unitLayer)
+            div(class=obj.unitFoto)
+            .unit(class=[obj.unitGeometry])
+
+                if obj.title.length
+                    h2.unit__title(class=obj.titleStyles)= obj.title
+
+                if obj.hrLine
+                    hr.unit__horizontal.unit__horizontal--black-solid
+
+                if obj.article.length
+                    p.unit__article(class=obj.articleStyles)= obj.article
+
+                if obj.buttons.length
+                    for btn in obj.buttons
+                        if btn.locationStyles.length
+                            div(class=btn.locationStyles)
+                                input.button(class=btn.btnStyles, type="button", value= btn.caption)
+                        else
+                            input.button(class=btn.btnStyles, type="button", value= btn.caption)
+    else
+        .unit(class=[obj.unitGeometry, obj.bgColor])
+
+            if obj.title.length
+                h2.unit__title(class=obj.titleStyles)= obj.title
+
+            if obj.hrLine
+                hr.unit__horizontal.unit__horizontal--black-solid
+
+            if obj.article.length
+                p.unit__article(class=obj.articleStyles)= obj.article
+
+            if obj.buttons.length
+                for btn in obj.buttons
+                    if btn.locationStyles.length
+                        div(class=btn.locationStyles)
+                            input.button(class=btn.btnStyles, type="button", value= btn.caption)
+                    else
+                        input.button(class=btn.btnStyles, type="button", value= btn.caption)

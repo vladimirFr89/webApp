@@ -1,0 +1,17 @@
+mixin unitScrollingButtons(obj)
+    .unit(class=obj.bgColor)
+        if obj.fixPaddingTop && obj.fixPaddingTop.length
+            div(class=obj.fixPaddingTop)
+        div.unit__button-arrow-wrap
+            button.button(class=obj.btnNextLayer0)
+                div.icon(class=obj.btnNextLayer1)
+
+        div.unit__info-wrap
+            span.unit__info(class=obj.mainInfoStyles)= obj.mainInfoValue
+            if obj.supInfoSlash.length
+                span.unit__info(class=obj.slashStyles)= obj.supInfoSlash
+            span.unit__info(class=obj.supInfoStyles)= obj.supInfoValue
+
+        div.unit__button-arrow-wrap
+            button.button(class=obj.btnPrevLayer0)
+                div.icon(class=obj.btnPrevLayer1)

@@ -1,0 +1,501 @@
+-
+    var unitsListData = [
+        {
+            unitGeometry:"unit--horizontal-double-unit",
+            title:"building the world around us",
+            titleStyles: [
+                "unit__title--big-bold",
+                "unit__title--big-width",
+                "unit__title--black-text"
+            ],
+            hrLine: true,
+            article: "Still other clients have reserved for capital improvement projects and will work directly with our Design and Engineering team.",
+            articleStyles:["unit__article--black-text"],
+            buttons:[
+                {
+                    caption:"Read more",
+                    btnStyles:[
+                        "button--theme-unit-btn",
+                        "button--black-bg",
+                        "button--text-white"
+                    ],
+                    locationStyles:["unit__fix-btn-read-more-wrap"]
+                }
+            ],
+            bgColor: "unit--theme-yellow"
+        },
+
+        {
+            title:"",
+            hrLine: false,
+            article:"",
+            buttons:[]
+        },
+
+        {
+            unitType: "twoBtnScroll",
+            btnNextLayer0:[
+                "button--theme-arrow",
+                "button--arrow-next"
+            ],
+            btnNextLayer1:"icon--arrow-next-inside",
+
+            mainInfoValue:"01",
+            mainInfoStyles:[
+                "unit__info--big-regular",
+                "unit__info--letter-spacing4",
+                "unit__info--black-text"
+            ],
+            supInfoSlash:"",
+            supInfoValue:"/03",
+            supInfoStyles:[
+                "unit__info--supper",
+                "unit__info--medium-regular",
+                "unit__info--letter-spacing2",
+                "unit__info--black-text"
+            ],
+
+            btnPrevLayer0:[
+                "button--theme-arrow",
+                "button--arrow-prev"
+            ],
+            btnPrevLayer1:"icon--arrow-prev-inside",
+            bgColor: "unit--theme-info"
+        },
+
+        {
+            title:"",
+            hrLine: false,
+            article:"",
+            buttons:[]
+        },
+
+        {
+            title:"",
+            hrLine: false,
+            article:"",
+            buttons:[]
+        },
+
+        {
+            unitType: "iconButton",
+            btnStyleLayer0: [
+                "icon--theme-circle",
+                "icon--blue-bg"
+            ],
+            btnStyleLayer1:["icon--theme-circle-bg"],
+            btnStyleLayer2:["icon--theme-play-arrow"],
+            locationStyles:["unit__company-video-wrap"],
+            infoValue: "Company video",
+            infoStyle: [
+                "unit__info--small-regular",
+                "unit__info--letter-spacing03",
+                "unit__info--white-text",
+                "unit__info--uppercase"
+            ],
+            bgColor: "unit--theme-blue"
+        },
+
+        {
+            title:"",
+            hrLine: false,
+            article:"",
+            buttons:[]
+        },
+        {
+            title:"Our services",
+            titleStyles: [
+                "unit__title--big-bold",
+                "unit__title--med-width",
+                "unit__title--black-text"
+            ],
+            hrLine: true,
+            article: "Our mission is to provide the highest level of service for our client-partners from concept through construction.",
+            articleStyles:["unit__article--gray-text"],
+            buttons:[]
+        },
+
+        {
+            unitType: "foto",
+            unitLayer: ["unit--bg-layer-unit"],
+            unitLayerFoto: "unit__picture--theme-contr",
+            bgColor: "unit--theme-foto"
+        },
+
+        {
+            unitType: "arrow",
+            unitLayer: "unit--bg-layer-unit",
+            title:"General Contracting",
+            titleStyles: [
+                "unit__title--med-bold",
+                "unit__title--med-width-h3",
+                "unit__title--black-text"
+            ],
+            hrLine: true,
+            article: "This allows the Design and Engineering team to originate drawings, specifications, structural calculations, details and scopes of work that deliver exactly what the client had intended to achieve.",
+            articleStyles:["unit__article--gray-text"],
+            arrowStyle: "unit__arrow--left",
+            bgColor: "unit--theme-info"
+        },
+
+        {
+            unitType: "foto",
+            unitLayer: ["unit--bg-layer-unit"],
+            unitLayerFoto: "unit__picture--theme-capital",
+            bgColor: "unit--theme-foto"
+        },
+
+        {
+            unitType: "twoBtnScroll",
+
+            fixPaddingTop:["unit__fix-padding-unit-with-arrow-hower"],
+
+            btnNextLayer0:[
+            "button--theme-arrow",
+            "button--arrow-next"
+            ],
+            btnNextLayer1:"icon--arrow-next-inside",
+
+            mainInfoValue:"03",
+            mainInfoStyles:[
+                "unit__info--big-regular",
+                "unit__info--fix-right-margin4",
+                "unit__info--black-text",
+                "unit__info--letter-spacing1"
+            ],
+            supInfoSlash:"/",
+            slashStyles:[
+                "unit__info--supper",
+                "unit__info--medium-regular",
+                "unit__info--black-text",
+                "unit__info--left-right-margin5"
+            ],
+            supInfoValue:"06",
+            supInfoStyles:[
+                "unit__info--supper",
+                "unit__info--medium-regular",
+                "unit__info--black-text"
+            ],
+
+            btnPrevLayer0:[
+                "button--theme-arrow",
+                "button--arrow-prev-hover"
+            ],
+            btnPrevLayer1:"icon--arrow-prev-inside",
+            bgColor: "unit--theme-info"
+        },
+
+        {
+            unitType: "arrow",
+            unitLayer: "unit--bg-layer-unit",
+            title:"Project design and engineering",
+            titleStyles: [
+                "unit__title--med-bold",
+                "unit__title--med-width-h3",
+                "unit__title--black-text"
+            ],
+            hrLine: true,
+            article: "Through Stage-Gate, Design and Engineering methodology, DMCS ensure client-partners realize clearly defined project objective to achieve intended results.",
+            articleStyles:["unit__article--gray-text"],
+            arrowStyle: "unit__arrow--right",
+            bgColor: "unit--theme-info"
+        },
+
+        {
+            unitType: "foto",
+            unitLayer: ["unit--bg-layer-unit"],
+            unitLayerFoto: "unit__picture--theme-desing",
+            bgColor: "unit--theme-foto"
+        },
+
+        {
+            unitType: "arrow",
+            unitLayer: "unit--bg-layer-unit",
+            title:"Capital improvements",
+            titleStyles: [
+            "unit__title--med-bold",
+            "unit__title--med-width-h3",
+            "unit__title--black-text"
+            ],
+            hrLine: true,
+            article: "This results in scope creep and slippage of the schedule that ultimately result in additional costs to the owner.",
+            articleStyles:["unit__article--gray-text"],
+            arrowStyle: "unit__arrow--up",
+            bgColor: "unit--theme-info"
+        },
+
+        {
+            unitType: "icon",
+            icons:[
+                {
+                    iconLayer0: "icon--theme-pdf"
+                }
+            ],
+            locationStyles:["unit__download-price-wrap"],
+            infoValue: "Download price",
+            infoStyle: [
+            "unit__info--small-regular",
+            "unit__info--letter-spacing03",
+            "unit__info--black-text",
+            "unit__info--uppercase"
+            ],
+            bgColor: "unit--theme-yellow"
+        },
+
+        {
+            unitType: "icon",
+            icons:[
+                {
+                    iconLayer0: "icon--theme-contact-circle",
+                    iconLayer1: "icon--theme-contact-circle-bg"
+                },
+                {
+                    iconLayer0: "icon--theme-play-arrow-down"
+                }
+            ],
+            locationStyles:["unit__contact-us-wrap"],
+            infoValue: "Contact us",
+            infoStyle: [
+            "unit__info--small-regular",
+            "unit__info--letter-spacing03",
+            "unit__info--white-text",
+            "unit__info--uppercase"
+            ],
+            bgColor: "unit--theme-blue"
+        },
+
+        {
+            unitType: "searchWithBg",
+            unitLayer:"unit--bg-layer-unit",
+            unitLayerFoto:"unit--bg-unit-width959",
+            unitFoto:"unit__picture--theme-what",
+            unitGeometry:"unit--horizontal-double-unit",
+            locationStyles:["unit__form-search-wrap"],
+            inputSearchValue: "What you're looking for",
+            inputStyles:[
+                "form__input--theme-unit-search",
+                "form__input--border-bottom-only",
+                "form__input--border-white"
+            ],
+            buttonStyles: [
+                "form__button--right-button",
+                "form__button--theme-search-button"
+            ]
+        },
+        {
+            unitType: "personPost",
+            unitGeometry:"unit--horizontal-double-unit",
+            locationStyles:["unit__person-info-wrap"],
+            avatar:"icon--person-avatar",
+            personInfoValue:"Martin H. Jhonsons",
+            personInfoStyles:[
+                "unit__info--norm-bold",
+                "unit__info--black-text"
+            ],
+            personRateLocationStyles:["unit__person-rate-inline-wrap"],
+            personRate:[
+                "icon--person-rate4",
+                "icon--person-rate1none"
+            ],
+            article: "Together, we'll couple our knowledge, expertise, and innovative capabilities with your astute knowledge of your business—to maximize and optimize results. This is all accomplished in a number of ways.",
+            articleStyles:[
+                "unit__article--centered-text",
+                "unit__article--gray-text"
+            ],
+            bgColor: "unit--white"
+        },
+
+        {
+            unitGeometry:"unit--horizontal-double-unit",
+            unitLayer:"unit--bg-layer-unit",
+            unitFoto:"unit__picture--theme-good-hands",
+            title:"Your building is in good hands",
+            titleStyles: [
+                "unit__title--big-bold",
+                "unit__title--big-width",
+                "unit__title--black-text",
+                "unit__title--fix-big-width"
+            ],
+            hrLine: true,
+            article: "Our mission is to provide the highest level of service for our client-partners from concept through construction.",
+            articleStyles:[
+                "unit__article--black-text",
+                "unit__article--fix-for-your-buildig-is"
+            ],
+            buttons:[
+            {
+                caption:"About company",
+                btnStyles:[
+                    "button--theme-unit-btn",
+                    "button--black-bg",
+                    "button--text-white",
+                    "button--fix-btn-about-company"
+                ],
+                locationStyles:[]
+                }
+            ]
+        },
+
+        {
+            unitType: "personPost",
+            unitGeometry:"unit--horizontal-double-unit",
+            locationStyles:["unit__person-info-wrap"],
+            avatar:"icon--person-avatar",
+            personInfoValue:"Tony SH. Schults",
+            personInfoStyles:[
+                "unit__info--norm-bold",
+                "unit__info--black-text"
+            ],
+            personRateLocationStyles:["unit__person-rate-inline-wrap"],
+            personRate:[
+                "icon--person-rate5"
+            ],
+            article: "When selecting DMCS as the design-build team, clients benefit in terms of efficiency and continuity that translate into cost savings and optimized schedules. Contact us today and see how DMCS can best serve you from",
+            articleStyles:[
+                "unit__article--centered-text",
+                "unit__article--margin-top10",
+                "unit__article--grey-yellow-text"
+            ],
+            hrLines:[
+                {lineStyles:[
+                    "unit__horizontal--black-solid",
+                    "unit__horizontal--width-small",
+                    "unit__horizontal--opasity-half",
+                    "unit__horizontal--inline"
+                ]},
+                {lineStyles:[
+                    "unit__horizontal--black-solid",
+                    "unit__horizontal--width-small",
+                    "unit__horizontal--inline"
+                ]}
+            ],
+            hrLinesLocationStyles:[
+                "unit__horiz-inline-center-bottom-wrap"
+            ],
+            bgColor: "unit--soft-gold"
+        },
+
+        {
+            unitType:"iconStatistic",
+            icons:[
+                {
+                    iconLayer0: "icon--blue-square",
+                    iconLayer1: "icon--blue-square-bg",
+                    iconLayer2: "icon--ligthinig-blue"
+                }
+            ],
+            mainInfoValue: "55 000",
+            subInfoValue: "Expert Witness",
+            bgColor:"unit--white"
+        },
+
+        {
+            unitType:"iconStatistic",
+            icons:[
+                {
+                    iconLayer0: "icon--blue-square",
+                    iconLayer1: ["icon--blue-square-bg", "icon--blue-square-bg--grey"],
+                    iconLayer2: "icon--raindrop"
+                    }
+            ],
+            mainInfoValue: "124 600",
+            subInfoValue: "Construction",
+            bgColor:"unit--theme-foto"
+        },
+
+        {
+            unitType: "news",
+            unitTitle:"News",
+            date:"12 february, 2015",
+            title:"Project Design and Engineering Services",
+            commentsCount: "23 comments",
+            bgColor:"unit--theme-blue"
+        },
+
+        {
+            unitType: "personPost",
+            unitGeometry:"",
+            locationStyles:["unit__person-info-wrap"],
+            avatar:"icon--person-avatar",
+            personInfoValue:"David Mc. Adams",
+            personInfoStyles:[
+                "unit__info--norm-bold",
+                "unit__info--black-text"
+            ],
+            personRateLocationStyles:["unit__person-rate-inline-wrap"],
+            personRate:[
+                "icon--person-rate4",
+                "icon--person-rate1none"
+            ],
+            article: "In most urban areas, construction has already built existing structures, many having been standing for decades.",
+            articleStyles:[
+                "unit__article--centered-text",
+                "unit__article--gray-text"
+            ],
+            bgColor: "unit--white"
+        },
+
+        {
+            unitType:"iconStatistic",
+            icons:[
+            {
+            iconLayer0: "icon--blue-square",
+            iconLayer1: ["icon--blue-square-bg", "icon--blue-square-bg--grey"],
+            iconLayer2: "icon--setting-tool-blue"
+            }
+            ],
+            mainInfoValue: "18 000",
+            subInfoValue: "Procurement",
+            bgColor:"unit--theme-foto"
+        },
+
+        {
+            unitType:"iconStatistic",
+            icons:[
+            {
+            iconLayer0: "icon--blue-square",
+            iconLayer1: "icon--blue-square-bg",
+            iconLayer2: "icon--light-bulb"
+            }
+            ],
+            mainInfoValue: "78 150",
+            subInfoValue: "Project Managments",
+            bgColor:"unit--white"
+        },
+        {
+            unitGeometry:"unit--vertical-double-unit",
+            unitType: "doubleArticle",
+            title:"Contemporary Villa",
+            titleStyles: [
+                "unit__title--big-bold",
+                "unit__title--med-width",
+                "unit__title--black-text",
+                "unit__title--uppercase-disabled",
+                "unit__title--fix-for-contemporary-vila"
+            ],
+            hrLine: true,
+            articles: [
+                "Diversity is a buzzword often heard by brand managers, business tycoons, politicians, and more; but it's much more than that. To us at DM Construction, diversity is the name of the game.",
+                "We offer a diverse set of skills to all clients in all fields, but also offer a diverse group of individuals who are able to deliver those skills. From"
+            ],
+            articleStyles:[
+                "unit__article--theme-unit-black-text",
+                "unit__article--gray-text",
+                "unit__article--fix-for-contemporary-vila"
+            ],
+            buttons:[
+                {
+                    caption:"view project",
+                    btnStyles:[
+                        "button--theme-unit-btn",
+                        "button--yellow-bg",
+                        "button--text-black",
+                        "unit__button-buttom-left",
+                        "button--fix-btn-view-project"
+                    ],
+                    locationStyles:["unit__fix-button-view-project-wrap"]
+                }
+            ],
+            bgColor:"unit--white"
+        }
+    ];

@@ -1,0 +1,12 @@
+mixin unitSubscribe(obj)
+    .unit(class=obj.bgColor)
+        if obj.unitTitle
+            h2.unit__title.unit__title--big-bold.unit__title--med-width.unit__title--letter-spacing018.unit__title--white-text= obj.unitTitle
+
+        if obj.hrLine
+            hr.unit__horizontal.unit__horizontal--white-solid
+
+        div(class=obj.locationStyles)
+            form.form
+                input.form__input(class=obj.inputStyles, type="text", name="email", value= obj.inputSearchValue)
+                input.form__submit(class=obj.buttonStyles type="submit", value= obj.buttonCaption)

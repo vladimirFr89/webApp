@@ -1,7 +1,210 @@
+@font-face
+  font-family Montserrat-reg
+  font-style normal
+  src url(../fonts/montserrat/Montserrat-Regular.ttf)
+
+@font-face
+  font-family Montserrat-bold
+  font-style normal
+  src url(../fonts/montserrat/Montserrat-Bold.ttf)
+
+
 body
   margin 0
+/*Блок для размещения шапки сайта*/
+.header
+  min-height 348px
+  background-color #36383b
 
-p
-  color red
-  border 1px solid gold
+  &--theme-home-page
+    min-height 240px
 
+  // Элемент шапки для фона шапки
+  &__bg
+    min-height 348px
+    width 50%
+    //Цвет фона для элемента шапки
+    &_theme-gray
+      background-color #d6d6d6
+
+    &--theme-dark-grey
+      //background-color #36383b
+      background-color #252628
+
+    &--height-home-page
+      min-height 826px
+
+    &--part-right
+      margin-left 50%
+
+    &--theme-head-banner
+      width 879px
+      height 826px
+      background url("../img/header-home-920px.jpg") no-repeat -334px
+      background-size auto 100%
+
+    &--theme-head-banner-left-part
+      width 920px
+      height 826px
+      margin-left auto
+      background url("../img/header-home-920px.jpg") no-repeat
+      background-size auto 100%
+
+
+  //Элемент шапки для контента
+  &__content
+    width 1172px
+
+  //Элемент шапки для фона контента в шапке(фон под лого, меню, и т.д)
+  &__content-bg
+    width 879px
+    min-height 348px
+    &_theme-red
+      background-color #ff0000
+    &_theme-gray
+      background-color #d6d6d6
+
+    &__theme-transparent
+      background-color transparent
+
+    &--height-home-page
+      min-height 826px
+
+  //Элемент шапки для содержимого(лого, меню, кнопки и т.д)
+  &__container
+    &_theme-green
+      background-color #008000
+
+/*примесь для фона шапки*/
+.header__bg-inner
+  position absolute
+
+/*примесь для контента шапки сайта*/
+.header__content-inner
+  margin-left auto
+  margin-right auto
+  position relative
+
+/*примесь для фона контента шапки сайта*/
+.header__content-bg-inner
+  position absolute
+
+/*примесь для содержимого контента шапки*/
+.header__content-container-inner
+  position relative
+  top 29px
+
+/*Блок для контента*/
+.content
+  width 800px
+  min-height 50px
+  &_theme-grey
+    background-color grey
+    opacity 0.5
+
+
+/*примесь для меню в контенте шапки*/
+.content__menu
+  position absolute
+  top 25px
+  right 0
+
+/*примесь для названия страницы*/
+.content__caption
+  margin-top 84px
+
+/*====================Блок лого=================*/
+@import "blocks/logo/logo.styl"
+
+/*====================Блок меню==================*/
+@import "blocks/menu/menu.styl"
+
+/*====================Блок с названием страницы=========*/
+.caption
+  width: 293px
+  height 71px
+  background-color #ffffff
+  &__text
+    display block
+    position relative
+    top 18px
+    left 29px
+    color #363636
+    font-family Montserrat-reg, sans-serif;
+    font-size 28px
+    //font-weight 600
+    letter-spacing .2px
+    text-transform uppercase
+
+/*====================Блок Тело сайта=========================*/
+@import "blocks/main/main.styl"
+
+/*!!!!!!=============Информационный блок=======================!!!!!*/
+@import "blocks/unit/unit.styl"
+
+/*===========================Блок форма==============================*/
+@import "blocks/form/form.styl"
+
+/*Футер сайта*/
+.footer
+  min-height 80px
+
+  &_theme-white-grey
+    background-color #f5f5f5
+
+  &_theme-text
+    color #9b9b9b
+    font-family Montserrat-reg, sans-serif;
+    font-size 12px
+    //font-weight 600
+
+  &_theme-text-menu
+    color #a2a2a2
+    font-family Montserrat-reg, sans-serif;
+    font-size 12px
+    //font-weight 600
+
+  &_theme-text-mark
+    color: #2297d8
+  //Элемент для контента футера
+  &__content
+    width 1172px
+    min-height 80px
+    //Фон для контента футера
+    &_theme-grey
+      background-color #f5f5f5
+  //Размещение контента в футере
+  &__inner
+    margin-left auto
+    margin-right auto
+
+  //Элемент для размещения содержимого типа копирайт, меню и т.д.
+  &__container
+    &__container-inner
+      position relative
+      top 32px
+
+    &__text-inner
+      display inline-block
+
+    &__menu-inner
+      float right
+
+    &::after
+      content ""
+      display table
+      clear both
+
+    &--menu-items-space
+      margin-right 32px
+
+    &--fix-inner-our-service-page
+      position relative
+      top 29px
+
+
+/*===============================Блок кнопка============================*/
+@import "blocks/button/button.styl"
+
+/*===============================Блок иконка============================*/
+@import "blocks/icon/icon.styl"

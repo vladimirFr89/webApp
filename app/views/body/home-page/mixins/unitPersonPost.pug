@@ -1,0 +1,14 @@
+mixin unitPersonPost(obj)
+    .unit(class=[obj.unitGeometry, obj.bgColor])
+        div(class=obj.locationStyles)
+            .icon(class=obj.avatar)
+            span.unit__info(class=obj.personInfoStyles)= obj.personInfoValue
+            div(class=obj.personRateLocationStyles)
+                if obj.personRate && obj.personRate.length
+                    each rate in obj.personRate
+                        div(class=rate)
+        p.unit__article(class=obj.articleStyles)= obj.article
+        div(class=obj.hrLinesLocationStyles)
+            if obj.hrLines && obj.hrLines.length
+                each line in obj.hrLines
+                    hr.unit__horizontal(class=line.lineStyles)
